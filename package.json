@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "rm -rf www && mkdir www && next build && next export www/",
+    "build": "rm -rf www && mkdir www && next build && next export -o www/",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "yarn lint --fix",
