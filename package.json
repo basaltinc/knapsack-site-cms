@@ -6,16 +6,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "rm -rf www && mkdir www && next build && next export -o www/",
     "start": "next start",
-    "test": "echo \"No test specified\" && exit 0"
+    "lint": "eslint .",
+    "lint:fix": "yarn lint --fix",
+    "test": "yarn lint"
   },
   "dependencies": {
     "next": "^7.0.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@basalt/eslint-config-base": "^0.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/basaltinc/bedrock-site.git"

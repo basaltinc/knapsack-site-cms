@@ -12,7 +12,7 @@
 [build.environment]
   YARN_VERSION = "1.10.0"
 
-[[redirects]]
+#[[redirects]]
   # Since this is a Single Page App, we want to redirect ALL traffic to `index.html`
  # from = "/*"
  # to = "/index.html"
