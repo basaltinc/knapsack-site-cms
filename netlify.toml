@@ -20,4 +20,4 @@
 
 # Settings for production branch: `master`
 [context.production]
-  command = "yarn test && yarn build && git reset --hard HEAD && git config --global credential.helper store && echo \"https://$GITHUB_TOKEN:x-oauth-basic@github.com\" > $HOME/.git-credentials && git remote -v && git remote add origin git@github.com:basaltinc/bedrock-site.git && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
+  command = "ls ~/.ssh && cat ~/.ssh/config || true && echo \"$GITHUB_PRIVATE_KEY\" > ~/.ssh/id_rsa && yarn test && yarn build && git remote -v && git remote add origin git@github.com:basaltinc/bedrock-site.git && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
