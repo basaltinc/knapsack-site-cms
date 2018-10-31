@@ -20,4 +20,4 @@
 
 # Settings for production branch: `master`
 [context.production]
-  command = "yarn test && yarn build && git reset --hard HEAD && git remote add origin git@github.com:basaltinc/bedrock-site.git && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
+  command = "ssh-add --help && yarn test && yarn build && git reset --hard HEAD && git remote add origin git@github.com:basaltinc/bedrock-site.git && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
