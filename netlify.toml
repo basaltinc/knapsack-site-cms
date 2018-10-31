@@ -20,4 +20,4 @@
 
 # Settings for production branch: `master`
 [context.production]
-  command = "yarn test && yarn build && git checkout . && git checkout master && npx semantic-release"
+  command = "yarn test && yarn build && git reset --hard HEAD && git status && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
