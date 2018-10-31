@@ -20,4 +20,4 @@
 
 # Settings for production branch: `master`
 [context.production]
-  command = "mkdir ~/.ssh && echo \"$GITHUB_PRIVATE_KEY\" > ~/.ssh/id_rsa && yarn test && yarn build && git remote -v && git remote add origin git@github.com:basaltinc/bedrock-site.git && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
+  command = "mkdir ~/.ssh && cp scripts/ci-ssh-config.txt ~/.ssh/config && echo \"$GITHUB_PRIVATE_KEY\" > ~/.ssh/id_rsa && yarn test && yarn build && git remote -v && git remote add origin git@github.com:basaltinc/bedrock-site.git && git remote -v && git ls-remote --heads origin master && git log && git checkout $BRANCH && npx semantic-release"
