@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "next",
     "build": "rm -rf www && mkdir www && next build && next export -o www/",
+    "commit": "git-cz",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "yarn lint --fix",
@@ -19,7 +20,22 @@
     "styled-components": "^4.0.2"
   },
   "devDependencies": {
-    "@basalt/eslint-config-base": "^0.2.0"
+    "@basalt/eslint-config-base": "^0.2.0",
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@semantic-release/changelog": "^3.0.1",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.5",
+    "@semantic-release/npm": "^5.0.5",
+    "@semantic-release/release-notes-generator": "^7.1.2",
+    "commitizen": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",

@@ -7,7 +7,7 @@
   publish = "www/"
 
   # Default build command.
-  command = "yarn test && yarn build"
+  command = "yarn test && yarn build && npx semantic-release"
 
 [build.environment]
   YARN_VERSION = "1.10.0"
