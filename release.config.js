@@ -35,6 +35,14 @@ module.exports = {
         assets: ['CHANGELOG.md', 'package.json'],
       },
     ],
+    [
+      // https://github.com/semantic-release/github
+      '@semantic-release/github',
+      {
+        // message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}', // eslint-disable-line
+        // assets: ['CHANGELOG.md', 'package.json'],
+      },
+    ],
     // [
     //   '@semantic-release/exec',
     //   {
