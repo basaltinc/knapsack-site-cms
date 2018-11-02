@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
-import Header from './Header';
-import Meta from './Meta';
+import Header from '../components/Header';
+import Meta from '../components/Meta';
 
 const theme = {
   primary: '#003249',
