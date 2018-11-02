@@ -1,10 +1,11 @@
 import React from 'react';
 import Spotlight from '../components/Spotlight';
+import Page from '../layouts/Page';
 
 const Home = () => (
-  <div>
+  <Page>
     <Spotlight />
-  </div>
+  </Page>
 );
 
 export default Home;
