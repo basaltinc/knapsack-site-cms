@@ -6,7 +6,7 @@ const Nav = () => (
     <Link href="/documentation">
       <a>Documentation</a>
     </Link>
-    <Link href="/contacmetat">
+    <Link href="/contact">
       <a>Contact</a>
     </Link>
   </NavStyles>

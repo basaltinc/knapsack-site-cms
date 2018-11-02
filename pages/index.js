@@ -1,1 +1,10 @@
-export default () => <div>Welcome to next.js!</div>;
+import React from 'react';
+import Spotlight from '../components/Spotlight';
+
+const Home = () => (
+  <div>
+    <Spotlight />
+  </div>
+);
+
+export default Home;

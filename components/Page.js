@@ -4,9 +4,9 @@ import Header from './Header';
 import Meta from './Meta';
 
 const theme = {
-  primary: '#3A8493',
-  secondary: '#4CB5C1',
-  tertiary: '#ACDFDF',
+  primary: '#003249',
+  secondary: '#007ea7',
+  tertiary: '#011936',
   accent: '#C7EB36',
   light: 'E4ECC2',
   black: '#393939',
@@ -14,6 +14,12 @@ const theme = {
   lightgrey: '#E1E1E1',
   bs: '0 4px 10px 0 rgba(0, 0, 0, 0.1)',
 };
+
+const Inner = styled.div`
+  max-width: ${props => props.theme.maxWidth};
+  margin: 0 auto;
+  padding: 2rem;
+`;
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -40,19 +46,17 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const StyledPage = styled.div`
-
-`;
+const StyledPage = styled.div``;
 
 class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <StyledPage>
-          <Meta />
           <GlobalStyles />
+          <Meta />
           <Header />
-          {this.props.children}
+          <Inner>{this.props.children}</Inner>
         </StyledPage>
       </ThemeProvider>
     );

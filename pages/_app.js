@@ -6,7 +6,7 @@ class BedrockWrapper extends App {
     const { Component, pageProps } = this.props;
     return (
       <Container>
-        <Page>
+        <Page suppressClassNameWarning>
           <Component {...pageProps} />
         </Page>
       </Container>
