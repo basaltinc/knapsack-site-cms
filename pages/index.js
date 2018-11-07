@@ -1,10 +1,20 @@
 import React from 'react';
-import Spotlight from '../components/Spotlight';
 import Page from '../layouts/Page';
+import Hero from '../slices/Hero';
+import FeaturesGrid from '../slices/FeaturesGrid';
+import WhatIsBedrock from '../slices/WhatIsBedrock';
+import Testimonials from '../slices/Testimonials';
+import Contact from '../slices/Contact';
+import GettingStarted from '../slices/GettingStarted';
 
 const Home = () => (
   <Page>
-    <Spotlight />
+    <Hero />
+    <WhatIsBedrock />
+    <FeaturesGrid />
+    <GettingStarted />
+    <Testimonials />
+    <Contact />
   </Page>
 );
 
