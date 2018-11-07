@@ -7,7 +7,7 @@ const FeaturesGridWrapper = styled.div`
 `;
 
 const FeaturesGrid = () => (
-  <FeaturesGridWrapper id={'features'}>
+  <FeaturesGridWrapper id="features">
     <Flex>
       <MediaCard
         imgSrc="../static/basalt-color.svg"

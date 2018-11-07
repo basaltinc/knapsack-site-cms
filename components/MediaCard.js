@@ -27,7 +27,7 @@ const MediaCardBottom = styled.div`
 const MediaCard = props => (
   <MediaCardWrapper>
     <MediaCardTop>
-      <img src={props.imgSrc} />
+      <img src={props.imgSrc} alt={props.title} />
     </MediaCardTop>
     <MediaCardBottom>
       <h4>{props.title}</h4>

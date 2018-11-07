@@ -12,9 +12,11 @@ const ContactWrapper = styled.div`
 `;
 
 const Contact = () => (
-  <ContactWrapper id={'contact'}>
+  <ContactWrapper id="contact">
     <h3>Want to learn more about Bedrock?</h3>
-    <Button link={'/'} color={'#7faba8'}>Contact Us</Button>
+    <Button link="/" color="#7faba8">
+      Contact Us
+    </Button>
   </ContactWrapper>
 );
 

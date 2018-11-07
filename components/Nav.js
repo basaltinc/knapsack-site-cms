@@ -15,14 +15,16 @@ export const NavList = () => (
   </>
 );
 
+/* eslint-disable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */
 export const Nav = () => (
   <NavStyles>
     <input type="checkbox" id="toggle" />
     <label className="toggle-container" htmlFor="toggle">
       <span className="button button-toggle" />
     </label>
-    <NavListStyles className={'nav'}>
+    <NavListStyles className="nav">
       <NavList />
     </NavListStyles>
   </NavStyles>
 );
+/* eslint-enable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */

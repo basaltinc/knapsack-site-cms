@@ -83,7 +83,7 @@ const ProfilePicture = styled.img`
 `;
 
 const Testimonial = props => (
-  <TestimonialWrapper id={'testimonials'}>
+  <TestimonialWrapper id="testimonials">
     <ProfilePicture src={props.img} alt="profile-sample1" />
     <figcaption>
       <blockquote>{props.quote}</blockquote>

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Slice } from './styles/SliceStyles';
 
 const GettingStartedWrapper = styled.div`
   padding: 4rem 2rem;
@@ -9,7 +8,7 @@ const GettingStartedWrapper = styled.div`
 `;
 
 const GettingStarted = () => (
-  <GettingStartedWrapper id={'getting-started'}>
+  <GettingStartedWrapper id="getting-started">
     <h3>Getting Started</h3>
     <p>Instructions will go here</p>
   </GettingStartedWrapper>
