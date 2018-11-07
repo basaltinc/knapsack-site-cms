@@ -1,15 +1,28 @@
 import Link from 'next/link';
-import NavStyles from './styles/NavStyles';
+import { NavStyles, NavListStyles } from './styles/NavStyles';
 
-const Nav = () => (
-  <NavStyles>
+export const NavList = () => (
+  <>
+    <Link href="#getting-started">
+      <a className="nav-item">Getting Started</a>
+    </Link>
     <Link href="/documentation">
-      <a>Documentation</a>
+      <a className="nav-item">Docs</a>
     </Link>
     <Link href="/contact">
-      <a>Contact</a>
+      <a className="nav-item">Contact</a>
     </Link>
-  </NavStyles>
+  </>
 );
 
-export default Nav;
+export const Nav = () => (
+  <NavStyles>
+    <input type="checkbox" id="toggle" />
+    <label className="toggle-container" htmlFor="toggle">
+      <span className="button button-toggle" />
+    </label>
+    <NavListStyles className={'nav'}>
+      <NavList />
+    </NavListStyles>
+  </NavStyles>
+);
