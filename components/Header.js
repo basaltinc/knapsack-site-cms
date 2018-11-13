@@ -30,7 +30,7 @@ const Header = () => (
     <Logo>
       <Link href="/">
         <a>Bedrock</a>
-        {/*<img src={'/../static/bedrock.svg'} />*/}
+        {/* <img src={'/../static/bedrock.svg'} /> */}
       </Link>
     </Logo>
     <Nav />
