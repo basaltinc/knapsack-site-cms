@@ -6,25 +6,19 @@ const StyledHeader = styled.header`
   top: 0px;
   position: sticky;
   background-color: ${props => props.theme.primary};
-  display: grid;
+  display: flex;
+  min-height: 50px;
   z-index: 99;
-  padding: 2rem 0;
-  grid-template-columns: auto 1fr;
+  padding: 1rem 0;
   justify-content: space-between;
-  align-items: stretch;
 `;
 
 const Logo = styled.div`
-  font-size: 3rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   min-width: 200px;
-  position: relative;
-  z-index: 2;
-  a {
-    margin-top: 4px;
-    position: absolute;
-    color: ${props => props.theme.light};
-    text-decoration: none;
+  max-height: 50px;
+  img {
+    max-height: 50px;
   }
 `;
 
@@ -32,8 +26,7 @@ const Header = () => (
   <StyledHeader>
     <Logo>
       <Link href="/">
-        <a>Bedrock</a>
-        {/* <img src={'/../static/bedrock.svg'} /> */}
+        <img src="/../static/bedrock.png" alt="bedrock logo" />
       </Link>
     </Logo>
     <Nav />

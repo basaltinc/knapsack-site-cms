@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const NavStyles = styled.div`
-  float: right;
   label,
   span,
   input {
@@ -58,12 +57,8 @@ export const NavStyles = styled.div`
     position: absolute;
     display: inline-block;
     right: 0;
-    //width: 30px;
-    //height: 30px;
-    //@media (min-width: 700px) {
     width: 60px;
     height: 60px;
-    //}
     margin: 1rem 1rem 1rem 0;
     background-color: transparent;
     border: none;
@@ -98,41 +93,14 @@ export const NavListStyles = styled.nav`
   margin-right: 1rem;
   pointer-events: none;
   transition: 0.5s;
+  margin-top: 8px;
   a {
     padding: 0.7rem 3rem;
-    display: flex;
+    display: inline-block;
     align-items: center;
     position: relative;
-    color: ${props => props.theme.light};
     text-decoration: none;
     cursor: pointer;
-    @media (max-width: 700px) {
-      //font-size: 1rem;
-      // padding: 0 10px;
-    }
-    &:after {
-      height: 2px;
-      background: ${props => props.theme.light};
-      content: '';
-      width: 0;
-      position: absolute;
-      transform: translateX(-50%);
-      transition: width 0.4s;
-      transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
-      left: 50%;
-      margin-top: 3rem;
-    }
-    &:hover,
-    &:focus {
-      outline: none;
-      &:after {
-        width: calc(100% - 60px);
-      }
-    }
-  }
-  a {
-    position: relative;
-    display: inline-block;
     float: right;
     clear: both;
     color: transparent;
@@ -156,6 +124,39 @@ export const NavListStyles = styled.nav`
       transform: translateY(-50%) scaleY(5);
       transition: 0.5s;
     }
+    &:after {
+      height: 2px;
+      background: ${props => props.theme.accent};
+      content: '';
+      width: 0;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: width 0.4s;
+      transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+      left: 50%;
+      margin-top: 3rem;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      &:after {
+        width: calc(100% - 60px);
+      }
+    }
   }
-  //}
+  @media (min-width: 900px) {
+    display: flex;
+    a {
+      color: ${props => props.theme.light};
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      transform: none;
+      line-height: inherit;
+      letter-spacing: normal;
+      pointer-events: all;
+      &:before {
+        display: none;
+      }
+    }
+  }
 `;
