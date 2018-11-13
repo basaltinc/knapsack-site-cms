@@ -6,7 +6,6 @@ export const NavStyles = styled.div`
   span,
   input {
   }
-  //@media (max-width: 700px) {
   input {
     position: absolute;
     left: -100%;
@@ -20,24 +19,24 @@ export const NavStyles = styled.div`
   input:checked {
     & ~ label span {
       &:before {
-        transform: translateY(-50%) rotate(45deg) scale(1);
+        transform: translateY(-50%) rotate(45deg) scale(0.6);
       }
       &:after {
-        transform: translateY(-50%) rotate(-45deg) scale(1);
+        transform: translateY(-50%) rotate(-45deg) scale(0.6);
       }
     }
     // Open nav
-    & ~ .nav {
-      margin-bottom: 4rem;
-      margin-right: 5rem;
+    & ~ nav {
+      margin: -1rem 5rem 4rem 0;
       @media (min-width: 700px) {
         margin-right: 4rem;
+        margin-top: 1rem;
       }
       pointer-events: auto;
       transform: translate(50px, 50px);
 
       // Restoring nav items from "lines" in the menu icon
-      .nav-item {
+      a {
         color: ${props => props.theme.accent};
         letter-spacing: 0;
         height: 40px;
@@ -92,24 +91,16 @@ export const NavStyles = styled.div`
       transform: translateY(-50%) rotate(-45deg) scale(0);
     }
   }
-  //}
 `;
 
 export const NavListStyles = styled.nav`
-  //margin: 0;
-  //padding: 0;
   float: right;
-  //display: flex;
-  //justify-self: end;
-  //font-size: 2rem;
-  //@media (max-width: 700px) {
   display: inline-block;
   margin: 1rem 1rem 0 0;
   pointer-events: none;
   transition: 0.5s;
-  a,
-  button {
-    padding: 1rem 3rem;
+  a {
+    padding: 0.7rem 3rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -140,14 +131,14 @@ export const NavListStyles = styled.nav`
       }
     }
   }
-  .nav-item {
+  a {
     position: relative;
     display: inline-block;
     float: right;
     clear: both;
     color: transparent;
     font-size: 14px;
-    letter-spacing: -7px;
+    letter-spacing: -10px;
     height: 7px;
     line-height: 7px;
     text-transform: uppercase;

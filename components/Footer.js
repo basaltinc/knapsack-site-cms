@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavList } from './Nav';
+import Contributors from './Contributors';
 
 const StyledFooter = styled.footer`
   background-color: ${props => props.theme.primary};
@@ -23,7 +24,10 @@ const FooterNav = styled.div`
   }
 `;
 
-const FooterRight = styled.div``;
+const FooterRight = styled.div`
+  max-width: 50%;
+  text-align: right;
+`;
 
 const Footer = () => (
   <StyledFooter>
@@ -31,7 +35,7 @@ const Footer = () => (
       <NavList />
     </FooterNav>
     <FooterRight>
-      <p>Something Else</p>
+      <Contributors />
     </FooterRight>
   </StyledFooter>
 );
