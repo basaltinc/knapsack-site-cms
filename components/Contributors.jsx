@@ -25,25 +25,15 @@ class Contributors extends Component {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     // temporary endpoint until bedrock is public
-    const contributors = [];
     const apiEndpoint =
       'https://api.github.com/repos/marywarrington/burrito-adventure/contributors';
     // const apiEndpoint = 'https://api.github.com/repos/basaltinc/bedrock/contributors';
-    window
+    await window
       .fetch(apiEndpoint)
       .then(res => res.json())
-      .then(data =>
-        data.map(contributor =>
-          contributors.push({
-            username: contributor.login,
-            avatar: contributor.avatar_url,
-            url: contributor.url,
-          }),
-        ),
-      )
-      .then(data => {
+      .then(contributors => {
         this.setState({
           contributors,
           ready: true,
@@ -63,7 +53,7 @@ class Contributors extends Component {
           {bedrockContributors.map(contributor => (
             <Link href={contributor.url} key={contributor.url}>
               <a>
-                <img src={contributor.avatar} alt={contributor.username} />
+                <img src={contributor.avatar_url} alt={contributor.username} />
               </a>
             </Link>
           ))}
