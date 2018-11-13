@@ -6,6 +6,8 @@ const WhatIsBedrockWrapper = styled.div`
   text-align: center;
   p {
     font-size: 4rem;
+    max-width: 800px;
+    margin: 3rem auto 5rem;
     color: ${props => props.theme.primary};
   }
   &:before {
@@ -18,12 +20,12 @@ const WhatIsBedrockWrapper = styled.div`
       linear,
       left top,
       right bottom,
-      color-stop(49.9%, ${props => props.theme.accent}),
+      color-stop(49.9%, ${props => props.theme.primaryExtra}),
       color-stop(50.1%, transparent)
     );
     background: linear-gradient(
       to right bottom,
-      ${props => props.theme.accent} 49.9%,
+      ${props => props.theme.primaryExtra} 49.9%,
       transparent 50.1%
     );
   }
@@ -31,10 +33,7 @@ const WhatIsBedrockWrapper = styled.div`
 
 const WhatIsBedrock = () => (
   <WhatIsBedrockWrapper>
-    <p>
-      Bedrock is a tool to get your design system up and running FAST! <br /> It
-      is uhmazing.
-    </p>
+    <p>A new, open source, scalable platform for multi-brand design systems.</p>
   </WhatIsBedrockWrapper>
 );
 

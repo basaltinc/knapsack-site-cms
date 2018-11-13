@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 
 const MediaCardWrapper = styled.div`
   display: block;
-  max-width: 360px;
-  min-width: 200px;
-  flex: 1 0 calc(33.333% - 20px);
+  flex: 1 0 250px;
+  margin: 1rem;
 `;
 
 const MediaCardTop = styled.div`

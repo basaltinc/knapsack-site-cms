@@ -37,7 +37,7 @@ export const NavStyles = styled.div`
 
       // Restoring nav items from "lines" in the menu icon
       a {
-        color: ${props => props.theme.accent};
+        color: ${props => props.theme.light};
         letter-spacing: 0;
         height: 40px;
         line-height: 40px;
@@ -78,7 +78,7 @@ export const NavStyles = styled.div`
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: ${props => props.theme.accent};
+      background-color: ${props => props.theme.light};
       border-radius: 5px;
       transition: 0.5s;
     }
@@ -113,7 +113,7 @@ export const NavListStyles = styled.nav`
     }
     &:after {
       height: 2px;
-      background: ${props => props.theme.accent};
+      background: ${props => props.theme.light};
       content: '';
       width: 0;
       position: absolute;
@@ -153,7 +153,7 @@ export const NavListStyles = styled.nav`
       right: 0;
       width: 100%;
       height: 2px;
-      background-color: ${props => props.theme.accent};
+      background-color: ${props => props.theme.light};
       transform: translateY(-50%) scaleY(5);
       transition: 0.5s;
     }

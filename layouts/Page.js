@@ -7,6 +7,7 @@ import Meta from '../components/Meta';
 
 const theme = {
   primary: '#1a1f4c',
+  primaryExtra: '#343e98',
   secondary: '#f5a426',
   tertiary: '#364852',
   accent: '#7faba8',

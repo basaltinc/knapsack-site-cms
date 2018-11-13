@@ -6,7 +6,7 @@ const HeroWrapper = styled.div`
   background: linear-gradient(
     180deg,
     ${props => props.theme.primary} 0,
-    ${props => props.theme.accent}
+    ${props => props.theme.primaryExtra}
   );
   padding: 10rem 2rem 5rem;
   color: ${props => props.theme.light};
@@ -25,10 +25,10 @@ const Hero = () => (
   <HeroWrapper>
     <h2>Get Started With Bedrock</h2>
     <ButtonsWrapper>
-      <Button color="#7faba8" isInverted link="/">
+      <Button color="#343e98" isInverted link="/">
         Get Started
       </Button>
-      <Button color="#7faba8" link="/documentation">
+      <Button color="#343e98" link="/documentation">
         Documentation
       </Button>
     </ButtonsWrapper>
