@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Avenir;
     font-weight: normal;
     font-style: normal;
+    min-height: 100%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -52,19 +53,26 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const StyledPage = styled.div``;
+const StyledPage = styled.div`
+  min-height: 100%;
+  position: relative;
+`;
+
+const Body = styled.div`
+  padding-bottom: 138px;
+  position: relative;
+  min-height: 100vh;
+`;
 
 const Page = props => (
   <ThemeProvider theme={theme}>
-    <>
-      <StyledPage>
-        <GlobalStyle />
-        <Meta />
-        <Header />
-        <>{props.children}</>
-      </StyledPage>
+    <StyledPage>
+      <GlobalStyle />
+      <Meta />
+      <Header />
+      <Body>{props.children}</Body>
       <Footer />
-    </>
+    </StyledPage>
   </ThemeProvider>
 );
 

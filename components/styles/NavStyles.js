@@ -58,17 +58,16 @@ export const NavStyles = styled.div`
     position: absolute;
     display: inline-block;
     right: 0;
-    width: 30px;
-    height: 30px;
-    @media (min-width: 700px) {
+    //width: 30px;
+    //height: 30px;
+    //@media (min-width: 700px) {
       width: 60px;
       height: 60px;
-    }
+    //}
     margin: 1rem 1rem 1rem 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    border-radius: 100%;
     transition: 0.5s + 0.1;
     &:before,
     &:after {
@@ -96,7 +95,7 @@ export const NavStyles = styled.div`
 export const NavListStyles = styled.nav`
   float: right;
   display: inline-block;
-  margin: 1rem 1rem 0 0;
+  margin-right: 1rem;
   pointer-events: none;
   transition: 0.5s;
   a {
@@ -108,8 +107,8 @@ export const NavListStyles = styled.nav`
     text-decoration: none;
     cursor: pointer;
     @media (max-width: 700px) {
-      font-size: 1rem;
-      padding: 0 10px;
+      //font-size: 1rem;
+      // padding: 0 10px;
     }
     &:after {
       height: 2px;
@@ -139,8 +138,8 @@ export const NavListStyles = styled.nav`
     color: transparent;
     font-size: 14px;
     letter-spacing: -10px;
-    height: 7px;
-    line-height: 7px;
+    height: 10px;
+    line-height: 10px;
     text-transform: uppercase;
     white-space: nowrap;
     transform: scaleY(0.2);

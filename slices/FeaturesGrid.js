@@ -3,7 +3,25 @@ import MediaCard from '../components/MediaCard';
 import { Flex } from './styles/SliceStyles';
 
 const FeaturesGridWrapper = styled.div`
-  padding: 4rem 2rem;
+  &:after {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 100%;
+    margin: 0 50px 0 0;
+    background: -webkit-gradient(
+      linear,
+      right bottom,
+      left top,
+      color-stop(49.9%, ${props => props.theme.primaryExtra}),
+      color-stop(50.1%, transparent)
+    );
+    background: linear-gradient(
+      to left top,
+      ${props => props.theme.primaryExtra} 49.9%,
+      transparent 50.1%
+    );
+  }
 `;
 
 const FeaturesGrid = () => (

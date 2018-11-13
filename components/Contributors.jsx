@@ -48,7 +48,7 @@ class Contributors extends Component {
     const bedrockContributors = this.state.contributors;
     return (
       <ContributorsWrapper>
-        Contributors
+        <p>Bedrock Contributors</p>
         <AvatarWrapper>
           {bedrockContributors.map(contributor => (
             <Link href={contributor.url} key={contributor.url}>

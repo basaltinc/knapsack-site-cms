@@ -7,6 +7,8 @@ const StyledHeader = styled.header`
   position: sticky;
   background-color: ${props => props.theme.primary};
   display: grid;
+  z-index: 99;
+  padding: 2rem 0;
   grid-template-columns: auto 1fr;
   justify-content: space-between;
   align-items: stretch;
@@ -19,7 +21,8 @@ const Logo = styled.div`
   position: relative;
   z-index: 2;
   a {
-    padding: 0.5rem 1rem;
+    margin-top: 4px;
+    position: absolute;
     color: ${props => props.theme.light};
     text-decoration: none;
   }

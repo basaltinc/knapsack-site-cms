@@ -9,6 +9,10 @@ const StyledFooter = styled.footer`
   padding: 2rem;
   display: block;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
   a {
     color: white;
   }
@@ -25,8 +29,12 @@ const FooterNav = styled.div`
 `;
 
 const FooterRight = styled.div`
-  max-width: 50%;
-  text-align: right;
+  margin-top: 2rem;
+  @media (min-width: 900px) {
+    max-width: 50%;
+    text-align: right;
+    margin-top: 0;
+  }
 `;
 
 const Footer = () => (

@@ -23,7 +23,7 @@ const ButtonsWrapper = styled.div`
 
 const Hero = () => (
   <HeroWrapper>
-    <h2>Get Started With Bedrock</h2>
+    <h2>Welcome to Bedrock</h2>
     <ButtonsWrapper>
       <Button color="#343e98" isInverted link="/">
         Get Started
