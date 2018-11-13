@@ -61,8 +61,8 @@ export const NavStyles = styled.div`
     //width: 30px;
     //height: 30px;
     //@media (min-width: 700px) {
-      width: 60px;
-      height: 60px;
+    width: 60px;
+    height: 60px;
     //}
     margin: 1rem 1rem 1rem 0;
     background-color: transparent;
