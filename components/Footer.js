@@ -28,6 +28,12 @@ const FooterNav = styled.div`
   }
 `;
 
+const Copyright = styled.p`
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 3px;
+`;
+
 const FooterRight = styled.div`
   margin-top: 2rem;
   @media (min-width: 900px) {
@@ -41,6 +47,7 @@ const Footer = () => (
   <StyledFooter>
     <FooterNav>
       <NavList />
+      <Copyright>Copyright Basalt, LLC {new Date().getFullYear()}</Copyright>
     </FooterNav>
     <FooterRight>
       <Contributors />

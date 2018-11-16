@@ -6,7 +6,7 @@ const FeaturesGridWrapper = styled.div`
   &:after {
     content: '';
     display: block;
-    height: 200px;
+    height: 125px;
     width: 100%;
     margin: 0 50px 0 0;
     background: -webkit-gradient(

@@ -7,13 +7,14 @@ const WhatIsBedrockWrapper = styled.div`
   p {
     font-size: 4rem;
     max-width: 800px;
-    margin: 3rem auto 5rem;
+    margin: 1rem auto 6rem;
+    padding: 0 2rem;
     color: ${props => props.theme.primary};
   }
   &:before {
     content: '';
     display: block;
-    height: 200px;
+    height: 125px;
     width: 100%;
     margin: 0 50px 0 0;
     background: -webkit-gradient(
