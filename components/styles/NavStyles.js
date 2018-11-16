@@ -95,7 +95,7 @@ export const NavListStyles = styled.nav`
   transition: 0.5s;
   margin-top: 8px;
   a {
-    padding: 0.7rem 3rem;
+    padding: 0.5rem 3rem;
     display: inline-block;
     align-items: center;
     position: relative;

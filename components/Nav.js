@@ -6,6 +6,9 @@ export const NavList = () => (
     <Link href="#getting-started">
       <a>Getting Started</a>
     </Link>
+    <Link href="/features">
+      <a>Features</a>
+    </Link>
     <Link href="/documentation">
       <a>Docs</a>
     </Link>
