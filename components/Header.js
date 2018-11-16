@@ -1,27 +1,24 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import Nav from './Nav';
-
-const Logo = styled.h1`
-  font-size: 3rem;
-  margin-left: 1rem;
-  position: relative;
-  z-index: 2;
-  a {
-    padding: 0.5rem 1rem;
-    color: ${props => props.theme.primary};
-    text-decoration: none;
-  }
-`;
+import { Nav } from './Nav';
 
 const StyledHeader = styled.header`
-  display: grid;
-  grid-template-columns: auto 1fr;
+  top: 0px;
+  position: sticky;
+  background-color: ${props => props.theme.primary};
+  display: flex;
+  min-height: 50px;
+  z-index: 99;
+  padding: 1rem 0;
   justify-content: space-between;
-  align-items: stretch;
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    justify-content: center;
+`;
+
+const Logo = styled.div`
+  margin-left: 2rem;
+  min-width: 200px;
+  max-height: 50px;
+  img {
+    max-height: 50px;
   }
 `;
 
@@ -29,7 +26,7 @@ const Header = () => (
   <StyledHeader>
     <Logo>
       <Link href="/">
-        <a>Bedrock</a>
+        <img src="/../static/bedrock.png" alt="bedrock logo" />
       </Link>
     </Logo>
     <Nav />

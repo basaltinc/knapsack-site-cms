@@ -2,60 +2,76 @@ import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Meta from '../components/Meta';
 
 const theme = {
-  primary: '#003249',
-  secondary: '#007ea7',
-  tertiary: '#011936',
-  accent: '#C7EB36',
-  light: 'E4ECC2',
+  primary: '#1a1f4c',
+  primaryExtra: '#343e98',
+  secondary: '#f5a426',
+  tertiary: '#364852',
+  accent: '#7faba8',
+  light: '#f8f8f8',
   black: '#393939',
   grey: '#3A3A3A',
-  lightgrey: '#E1E1E1',
+  lightGrey: '#E1E1E1',
   bs: '0 4px 10px 0 rgba(0, 0, 0, 0.1)',
 };
 
-const Inner = styled.div`
-  max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
-  padding: 2rem;
-`;
-
-const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: Arial;
+const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: Avenir;
     font-weight: normal;
     font-style: normal;
-  }
-  html {
-      box-sizing: border-box;
-      font-size: 10px;
+    min-height: 100%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
   }
   body {
-      padding: 0;
-      margin: 0;
-      font-size: 1.5rem;
-      line-height: 2;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.3;
   }
   a {
     text-decoration: none;
     color: ${theme.black};
   }
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 3.2rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
 `;
 
-const StyledPage = styled.div``;
+const StyledPage = styled.div`
+  min-height: 100%;
+  position: relative;
+`;
+
+const Body = styled.div`
+  padding-bottom: 138px;
+  position: relative;
+  min-height: 100vh;
+`;
 
 const Page = props => (
   <ThemeProvider theme={theme}>
     <StyledPage>
-      <GlobalStyles />
+      <GlobalStyle />
       <Meta />
       <Header />
-      <Inner>{props.children}</Inner>
+      <Body>{props.children}</Body>
+      <Footer />
     </StyledPage>
   </ThemeProvider>
 );

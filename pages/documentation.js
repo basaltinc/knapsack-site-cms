@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import Page from '../layouts/Page';
 
 const Documentation = styled.div`
-  background-color: pink;
+  padding: 4rem;
 `;
 
 export default () => (
   <Page>
-    <Documentation>Documentation!</Documentation>
+    <Documentation>
+      <h1>Coming Soon</h1>
+    </Documentation>
   </Page>
 );

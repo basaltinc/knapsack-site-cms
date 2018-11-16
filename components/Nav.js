@@ -1,15 +1,30 @@
 import Link from 'next/link';
-import NavStyles from './styles/NavStyles';
+import { NavStyles, NavListStyles } from './styles/NavStyles';
 
-const Nav = () => (
-  <NavStyles>
+export const NavList = () => (
+  <>
+    <Link href="#getting-started">
+      <a>Getting Started</a>
+    </Link>
     <Link href="/documentation">
-      <a>Documentation</a>
+      <a>Docs</a>
     </Link>
     <Link href="/contact">
       <a>Contact</a>
     </Link>
-  </NavStyles>
+  </>
 );
 
-export default Nav;
+/* eslint-disable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */
+export const Nav = () => (
+  <NavStyles>
+    <input type="checkbox" id="toggle" />
+    <label htmlFor="toggle">
+      <span />
+    </label>
+    <NavListStyles>
+      <NavList />
+    </NavListStyles>
+  </NavStyles>
+);
+/* eslint-enable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */

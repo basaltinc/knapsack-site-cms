@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import Page from '../layouts/Page';
 
 const Contact = styled.div`
-  background-color: yellow;
+  padding: 4rem;
 `;
 
 export default () => (
   <Page>
-    <Contact>Contact!</Contact>
+    <Contact>
+      <h1>Coming Soon</h1>
+    </Contact>
   </Page>
 );
