@@ -38,7 +38,7 @@ const ContactWrapper = styled.div`
     display: block;
     position: absolute;
     content: ' ';
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(26, 31, 76, 0.4);
     top: 0;
     left: 0;
     width: 100%;
