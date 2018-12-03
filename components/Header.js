@@ -28,7 +28,7 @@ const Logo = styled.div`
 const Header = () => (
   <StyledHeader>
     <Logo>
-      <Link href={'./'}>
+      <Link href="./">
         <img src="/../static/bedrock.png" alt="bedrock logo" />
       </Link>
     </Logo>
