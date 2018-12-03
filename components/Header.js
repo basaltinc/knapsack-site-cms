@@ -17,6 +17,9 @@ const Logo = styled.div`
   margin-left: 2rem;
   min-width: 200px;
   max-height: 50px;
+  &:hover {
+    cursor: pointer;
+  }
   img {
     max-height: 50px;
   }
@@ -25,7 +28,7 @@ const Logo = styled.div`
 const Header = () => (
   <StyledHeader>
     <Logo>
-      <Link href="/">
+      <Link href={'./'}>
         <img src="/../static/bedrock.png" alt="bedrock logo" />
       </Link>
     </Logo>
