@@ -55,7 +55,7 @@ const Contact = () => (
   <ContactWrapper id="contact">
     <ContactContent>
       <h3>Want to learn more about Bedrock?</h3>
-      <Button link="/" color="#1a1f4c" isInverted>
+      <Button link="mailto:bedrock@basalt.io" color="#1a1f4c" isInverted>
         Contact Us
       </Button>
     </ContactContent>
