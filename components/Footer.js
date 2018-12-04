@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
   bottom: 0;
   width: 100%;
   height: auto;
+  font-size: 1.5rem;
   a {
     color: white;
   }
@@ -26,6 +27,29 @@ const FooterNav = styled.div`
   * {
     display: block;
   }
+  a {
+    padding: 0.5rem 0;
+    position: relative;
+    &:after {
+      height: 2px;
+      background: ${props => props.theme.accent};
+      content: '';
+      width: 0;
+      position: absolute;
+      transition: width 0.4s;
+      transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+      left: 0;
+      margin-top: 2rem;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+  margin-bottom: 1rem;
 `;
 
 const Copyright = styled.p`
