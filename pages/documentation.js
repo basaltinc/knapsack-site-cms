@@ -10,7 +10,7 @@ import {
   SubDoc,
   Doc,
   Code,
-} from './documentation.styles';
+} from './styles/docsStyles';
 
 export default () => (
   <Page>
