@@ -75,7 +75,6 @@ export const Code = styled.code`
   padding: 2rem;
 `;
 
-
 export default () => (
   <Page>
     <Wrapper>
