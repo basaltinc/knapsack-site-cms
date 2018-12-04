@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  display: block;
+  @media (min-width: 650px) {
+    display: flex;
+  }
   position: relative;
-  display: flex;
   hr {
     display: block;
     height: 1px;
@@ -17,13 +20,15 @@ export const Wrapper = styled.div`
 `;
 
 export const DocSidebar = styled.aside`
-  position: fixed;
-  width: 20%;
-  height: 100%;
-  border-right: 1px solid ${props => props.theme.lightGrey};
   text-align: left;
   justify-content: space-between;
   padding: 2rem;
+  @media (min-width: 650px) {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid ${props => props.theme.lightGrey};
+  }
 `;
 
 export const CategoryWrapper = styled.div`
@@ -45,9 +50,11 @@ export const SubCategory = styled.a`
 `;
 
 export const Documentation = styled.div`
-  margin-left: 20%;
-  flex-grow: 1;
   padding: 2rem;
+  @media (min-width: 650px) {
+    flex-grow: 1;
+    margin-left: 20%;
+  }
 `;
 
 export const Doc = styled.div`

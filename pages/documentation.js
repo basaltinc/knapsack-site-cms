@@ -44,7 +44,11 @@ export default () => (
           <h2>Getting Started</h2>
           <SubDoc>
             <h3 id="requirements">Requirements</h3>
-            <a href="https://nodejs.org/en/" target="_blank">
+            <a
+              href="https://nodejs.org/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               node.js 8+
             </a>
           </SubDoc>
@@ -86,7 +90,19 @@ export default () => (
         <hr />
         <Doc>
           <h2>Design Tokens</h2>
-          <p>Design tokens are a way to store visual information (CSS) in organized bundles. Bedrock is set up to use design tokens using <a href="https://www.npmjs.com/package/theo">Theo</a>. As your design system grows, design tokens allow for scalability and </p>
+          <p>
+            Design tokens are a way to store visual information (CSS) in
+            organized bundles. Bedrock is set up to use design tokens using{' '}
+            <a
+              href="https://www.npmjs.com/package/theo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Theo
+            </a>
+            . As your design system grows, design tokens allow for scalability
+            and{' '}
+          </p>
           <SubDoc>
             <h3 id="design-tokens">Connecting Design Tokens</h3>
             <p>Connect your design tokens like this:</p>

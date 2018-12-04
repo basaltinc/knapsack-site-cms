@@ -1,53 +1,50 @@
 import styled from 'styled-components';
 
 export const NavStyles = styled.div`
-  label,
-  span,
   input {
-  }
-  input {
-    position: absolute;
-    left: -100%;
-    top: -100%;
+    display: none;
   }
   label {
-    float: right;
-    margin-right: 120px;
+    @media (min-width: 900px) {
+      display: none;
+    }
   }
 
-  input:checked {
-    & ~ label span {
-      &:before {
-        transform: translateY(-50%) rotate(45deg) scale(0.6);
-      }
-      &:after {
-        transform: translateY(-50%) rotate(-45deg) scale(0.6);
-      }
-    }
-    // Open nav
-    & ~ nav {
-      margin: -1rem 5rem 4rem 0;
-      @media (min-width: 700px) {
-        margin-right: 4rem;
-        margin-top: 1rem;
-      }
-      pointer-events: auto;
-      transform: translate(50px, 50px);
-
-      // Restoring nav items from "lines" in the menu icon
-      a {
-        color: ${props => props.theme.light};
-        letter-spacing: 0;
-        height: 40px;
-        line-height: 40px;
-        margin-top: 0;
-        opacity: 1;
-        transform: scaleY(1);
-        transition: 0.5s, opacity 0.1s;
-
-        // Hiding the lines
+  @media (max-width: 900px) {
+    input:checked {
+      & ~ label span {
         &:before {
-          opacity: 0;
+          transform: translateY(-50%) rotate(45deg) scale(0.6);
+        }
+        &:after {
+          transform: translateY(-50%) rotate(-45deg) scale(0.6);
+        }
+        margin: 0;
+      }
+      // Open nav
+      & ~ nav {
+        margin: -1rem 4rem 4rem -11rem;
+        padding-bottom: 1rem;
+        @media (min-width: 700px) {
+          margin-top: 1rem;
+        }
+        pointer-events: auto;
+        transform: translate(50px, 50px);
+        // Restoring nav items from "lines" in the menu icon
+        a {
+          color: ${props => props.theme.light};
+          letter-spacing: 0;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 0;
+          opacity: 1;
+          transform: scaleY(1);
+          transition: 0.5s, opacity 0.1s;
+
+          // Hiding the lines
+          &:before {
+            opacity: 0;
+          }
         }
       }
     }
@@ -90,7 +87,7 @@ export const NavStyles = styled.div`
 export const NavListStyles = styled.nav`
   float: right;
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 2rem;
   pointer-events: none;
   transition: 0.5s;
   margin-top: 8px;
