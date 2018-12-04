@@ -41,11 +41,23 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: ${theme.black};
   }
+  p {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
   h3 {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
   h4 {
-    font-size: 3.2rem;
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.2rem;
   }
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
