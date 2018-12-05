@@ -3,7 +3,7 @@ import { NavStyles, NavListStyles } from './styles/NavStyles';
 
 export const NavList = () => (
   <>
-    <Link href="#getting-started">
+    <Link href="/#getting-started">
       <a>Getting Started</a>
     </Link>
     <Link href="/features">
@@ -12,7 +12,7 @@ export const NavList = () => (
     <Link href="/documentation">
       <a>Docs</a>
     </Link>
-    <Link href="/contact">
+    <Link href="mailto:bedrock@basalt.io">
       <a>Contact</a>
     </Link>
   </>
