@@ -45,7 +45,7 @@ const Testimonials = () => (
       <Flex>
         {testimonials.map(testimonial => (
           <Testimonial
-            key={testimonial.quote}
+            key={testimonial.name}
             img={testimonial.img}
             quote={testimonial.quote}
             name={testimonial.name}
