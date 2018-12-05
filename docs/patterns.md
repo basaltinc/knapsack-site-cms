@@ -1,5 +1,6 @@
 ---
 layout: docs
-title: Patterns
+title: Introduction
 ---
-Patterns are the bread and butter of your design system.
+Welcome to Bedrock! Bedrock is an open source, scalable platform ideal for
+multi-brand design systems. Using Bedrock, you can get your own design system up and running quickly.
