@@ -82,6 +82,7 @@ export const Code = styled.code`
   padding: 2rem;
 `;
 
+/* eslint-disable react/prop-types, no-unused-vars */
 const DocsPage = props => {
   let [doc] = docs;
   if (props.router.query.item) {
