@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { whatIsBedrock } from '../data/settings';
 
 const WhatIsBedrockWrapper = styled.div`
   //background-color: ${props => props.theme.secondary};
@@ -34,7 +35,7 @@ const WhatIsBedrockWrapper = styled.div`
 
 const WhatIsBedrock = () => (
   <WhatIsBedrockWrapper>
-    <p>A new, open source, scalable platform for multi-brand design systems.</p>
+    <p>{whatIsBedrock}</p>
   </WhatIsBedrockWrapper>
 );
 

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import MediaCard from '../components/MediaCard';
 import { Flex } from './styles/SliceStyles';
+import { features } from '../data/features';
 
 const FeaturesGridWrapper = styled.div`
   &:after {
@@ -27,26 +28,14 @@ const FeaturesGridWrapper = styled.div`
 const FeaturesGrid = () => (
   <FeaturesGridWrapper id="features">
     <Flex>
-      <MediaCard
-        imgSrc="../static/icons/route.svg"
-        title=""
-        copy="Allows integration points cross-discipline"
-      />
-      <MediaCard
-        imgSrc="../static/icons/documentation.svg"
-        title=""
-        copy="Facilitates documentation to ensure clear component intention, properties, and use cases."
-      />
-      <MediaCard
-        imgSrc="../static/icons/pagebuilder.svg"
-        title=""
-        copy="Prototypes full experiences in our Page Builder"
-      />
-      <MediaCard
-        imgSrc="../static/icons/component.svg"
-        title=""
-        copy="Builds coded components for your design system"
-      />
+      {features.map(feature => (
+        <MediaCard
+          key={feature.imgSrc}
+          imgSrc={feature.imgSrc}
+          title={feature.title}
+          copy={feature.copy}
+        />
+      ))}
     </Flex>
   </FeaturesGridWrapper>
 );

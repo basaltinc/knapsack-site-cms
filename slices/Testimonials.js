@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Testimonial from '../components/Testimonial';
 import { Flex } from './styles/SliceStyles';
+import { testimonials } from '../data/testimonials';
 
 const TestimonialsWrapper = styled.div`
   background: ${props => props.theme.lightGrey};
@@ -42,21 +43,14 @@ const Testimonials = () => (
     <Inner>
       <h2>What are people saying about Bedrock?</h2>
       <Flex>
-        <Testimonial
-          img="../static/profiles/joe.png"
-          quote="Twig, React, Json, compile, component, css, test driven, …"
-          name="Joe Karasek"
-        />
-        <Testimonial
-          img="../static/profiles/joe.png"
-          quote="Twig, React, Json, compile, component, css, test driven, …"
-          name="Joe Karasek"
-        />
-        <Testimonial
-          img="../static/profiles/joe.png"
-          quote="Twig, React, Json, compile, component, css, test driven, …"
-          name="Joe Karasek"
-        />
+        {testimonials.map(testimonial => (
+          <Testimonial
+            key={testimonial.name}
+            img={testimonial.img}
+            quote={testimonial.quote}
+            name={testimonial.name}
+          />
+        ))}
       </Flex>
     </Inner>
   </TestimonialsWrapper>

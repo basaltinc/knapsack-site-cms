@@ -72,7 +72,7 @@ const StyledPage = styled.div`
 
 const PageWrapper = styled.div`
   display: grid;
-  grid-template-rows: minmax(70px, 400px) auto 175px;
+  grid-template-rows: 70px auto 175px;
   height: 100vh;
   grid-template-areas:
     'header'
