@@ -1,19 +1,19 @@
 {
   "testimonials": [
     {
-      "img": "/static/profiles/joe.png",
+      "name": "Joe Karasek1",
       "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "name": "Joe Karasek1"
+      "img": "/static/profiles/joe.png"
     },
     {
-      "img": "/static/profiles/joe.png",
+      "name": "Joe Karasek2",
       "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "name": "Joe Karasek2"
+      "img": "/static/profiles/joe.png"
     },
     {
-      "img": "/static/profiles/joe.png",
+      "name": "Joe Karasek34",
       "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "name": "Joe Karasek3"
+      "img": "/static/profiles/joe.png"
     }
   ]
 }
