@@ -81,11 +81,8 @@ const PageWrapper = styled.div`
 `;
 
 const Body = styled.div`
-  //padding-bottom: 138px;
   position: relative;
   grid-area: main;
-  //flex-grow: 1;
-  //min-height: 100vh;
 `;
 
 const Page = props => (
@@ -94,17 +91,9 @@ const Page = props => (
       <GlobalStyle />
       <Meta />
       <PageWrapper>
-        <Header
-          // styles={{
-          //   'grid-area': 'header',
-          // }}
-        />
+        <Header />
         <Body>{props.children}</Body>
-        <Footer
-          // styles={{
-          //   'grid-area': 'footer',
-          // }}
-        />
+        <Footer />
       </PageWrapper>
     </StyledPage>
   </ThemeProvider>
