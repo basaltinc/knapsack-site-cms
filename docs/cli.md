@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: CLI
+order: 55
 ---
 In your terminal, use following commands:
 

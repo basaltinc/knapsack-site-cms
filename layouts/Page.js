@@ -76,14 +76,14 @@ const StyledPage = styled.div`
 
 const PageWrapper = styled.div`
   display: grid;
-  grid-template-rows: 70px auto 175px;
+  grid-template-rows: 70px 1fr 175px;
   height: 100vh;
   grid-template-areas:
     'header'
     'main'
     'footer';
   @media (max-width: 900px) {
-    grid-template-rows: 70px auto auto;
+    grid-template-rows: 70px 1fr auto;
   }
 `;
 
