@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
+import { hero } from '../data/settings';
 
 const HeroWrapper = styled.div`
   background: linear-gradient(
@@ -23,7 +24,7 @@ const ButtonsWrapper = styled.div`
 
 const Hero = () => (
   <HeroWrapper>
-    <h2>Welcome to Bedrock</h2>
+    <h2>{hero}</h2>
     <ButtonsWrapper>
       <Button color="#343e98" isInverted link="#getting-started">
         Get Started
