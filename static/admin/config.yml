@@ -22,6 +22,12 @@ collections:
   - name: "site"
     label: Site
     files:
+      - label: Settings
+        name: settings
+        file: "data/settings.json"
+        fields:
+          - { label: Hero, name: hero, widget: string }
+          - { label: What Is Bedrock, name: whatIsBedrock, widget: string }
       - label: Testimonials
         name: testimonials
         file: "data/testimonials.json"
@@ -33,3 +39,14 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Quote, name: quote, widget: string}
               - {label: Image, name: img, widget: image}
+      - label: Features
+        name: features
+        file: "data/features.json"
+        fields:
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Copy, name: copy, widget: string}
+              - {label: Image, name: imgSrc, widget: image}
