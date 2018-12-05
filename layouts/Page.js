@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Avenir;
     font-weight: normal;
     font-style: normal;
-    min-height: 100%;
+    min-height: 100vh;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -70,10 +70,22 @@ const StyledPage = styled.div`
   position: relative;
 `;
 
+const PageWrapper = styled.div`
+  display: grid;
+  grid-template-rows: 70px auto 175px;
+  height: 100vh;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+`;
+
 const Body = styled.div`
-  padding-bottom: 138px;
+  //padding-bottom: 138px;
   position: relative;
-  min-height: 100vh;
+  grid-area: main;
+  //flex-grow: 1;
+  //min-height: 100vh;
 `;
 
 const Page = props => (
@@ -81,9 +93,19 @@ const Page = props => (
     <StyledPage>
       <GlobalStyle />
       <Meta />
-      <Header />
-      <Body>{props.children}</Body>
-      <Footer />
+      <PageWrapper>
+        <Header
+          // styles={{
+          //   'grid-area': 'header',
+          // }}
+        />
+        <Body>{props.children}</Body>
+        <Footer
+          // styles={{
+          //   'grid-area': 'footer',
+          // }}
+        />
+      </PageWrapper>
     </StyledPage>
   </ThemeProvider>
 );

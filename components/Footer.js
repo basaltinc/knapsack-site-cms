@@ -7,13 +7,10 @@ const StyledFooter = styled.footer`
   color: white;
   margin: 0;
   padding: 2rem;
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: auto;
   font-size: 1.5rem;
+  z-index: 999;
   a {
     color: white;
   }

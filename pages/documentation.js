@@ -87,7 +87,7 @@ export default () => (
         </CategoryWrapper>
         <CategoryWrapper>
           <Category>Design Tokens</Category>
-          <SubCategory href="#design-tokens">Introduction</SubCategory>
+          <SubCategory href="#design-tokens">Connecting Design Tokens</SubCategory>
         </CategoryWrapper>
         <CategoryWrapper>
           <Category>Patterns</Category>
@@ -180,6 +180,7 @@ export default () => (
           </p>
           <SubDoc>
             <h3>Something</h3>
+            <p>More about that something</p>
           </SubDoc>
         </Doc>
         <hr />
