@@ -9,7 +9,7 @@ export const NavList = () => (
     <Link href="/features">
       <a>Features</a>
     </Link>
-    <Link href="/documentation">
+    <Link href="/docs">
       <a>Docs</a>
     </Link>
     <Link href="mailto:bedrock@basalt.io">

@@ -33,7 +33,7 @@ const GettingStarted = () => (
       npm install <br />
       npm start <br />
     </Code>
-    <Button color="#1A1F4C" link="/documentation">
+    <Button color="#1A1F4C" link="/docs">
       Read the Docs
     </Button>
   </GettingStartedWrapper>

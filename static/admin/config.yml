@@ -1,3 +1,4 @@
+# https://www.netlifycms.org/docs/intro
 backend:
   name: github
   repo: basaltinc/bedrock-site
@@ -16,3 +17,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "docs"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Order", name: "order", widget: "number"}

@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: my first doc
+order: 50
 ---
 * a
 * b

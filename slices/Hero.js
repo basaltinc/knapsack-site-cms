@@ -29,7 +29,7 @@ const Hero = () => (
       <Button color="#343e98" isInverted link="#getting-started">
         Get Started
       </Button>
-      <Button color="#343e98" link="/documentation">
+      <Button color="#343e98" link="/docs">
         Documentation
       </Button>
     </ButtonsWrapper>

@@ -37,6 +37,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
     line-height: 1.3;
   }
+  img {
+    max-width: 100%;
+    height:auto;
+  }
   a {
     text-decoration: none;
     color: ${theme.black};

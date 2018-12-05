@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Mary's New Doc
+order: 10
 ---
 jfjsdjdfsa;;klal
 
