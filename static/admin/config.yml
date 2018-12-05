@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: basaltinc/bedrock-site
-  branch: feature/admin
+  branch: master
 
 media_folder: "static/uploads"
 public_folder: "/static/uploads"
