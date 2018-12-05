@@ -54,6 +54,8 @@ const Copyright = styled.p`
   background-color: ${props => props.theme.primary};
   padding: 0 0 1rem 2rem;
   color: white;
+  z-index: 1;
+  max-height: 40px;
 `;
 
 const FooterRight = styled.div`
