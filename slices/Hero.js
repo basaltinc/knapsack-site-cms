@@ -25,7 +25,7 @@ const Hero = () => (
   <HeroWrapper>
     <h2>Welcome to Bedrock</h2>
     <ButtonsWrapper>
-      <Button color="#343e98" isInverted link="/">
+      <Button color="#343e98" isInverted link="#getting-started">
         Get Started
       </Button>
       <Button color="#343e98" link="/documentation">

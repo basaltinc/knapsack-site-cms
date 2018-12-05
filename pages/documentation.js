@@ -30,6 +30,7 @@ export const DocSidebar = styled.aside`
     width: 20%;
     height: 100%;
     border-right: 1px solid ${props => props.theme.lightGrey};
+    z-index: -1;
   }
 `;
 

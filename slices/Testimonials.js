@@ -40,7 +40,7 @@ const Inner = styled.div`
 const Testimonials = () => (
   <TestimonialsWrapper>
     <Inner>
-      <h3>What are people saying about Bedrock?</h3>
+      <h2>What are people saying about Bedrock?</h2>
       <Flex>
         <Testimonial
           img="../static/profiles/joe.png"
