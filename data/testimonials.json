@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "img": "/static/profiles/joe.png",
+      "quote": "Twig, React, Json, compile, component, css, test driven, …",
+      "name": "Joe Karasek"
+    },
+    {
+      "img": "/static/profiles/joe.png",
+      "quote": "Twig, React, Json, compile, component, css, test driven, …",
+      "name": "Joe Karasek"
+    },
+    {
+      "img": "/static/profiles/joe.png",
+      "quote": "Twig, React, Json, compile, component, css, test driven, …",
+      "name": "Joe Karasek"
+    }
+  ]
+}
