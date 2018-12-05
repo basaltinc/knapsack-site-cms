@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Installation
+order: 40
 ---
 In your terminal, run the following commands, replacing `my-design-system` with the name of your design system:
 

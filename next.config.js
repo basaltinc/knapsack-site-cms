@@ -3,6 +3,12 @@ const { join } = require('path');
 const md = require('marked');
 const matter = require('gray-matter');
 
+function sortDocs(a, b) {
+  if (a.data.order < b.data.order) return -1;
+  if (a.data.order > b.data.order) return 1;
+  return 0;
+}
+
 module.exports = {
   distDir: 'build',
   publicRuntimeConfig: {
@@ -19,6 +25,7 @@ module.exports = {
           content: md.parse(results.content),
           id: doc.replace('.md', ''),
         };
-      }),
+      })
+      .sort(sortDocs),
   },
 };

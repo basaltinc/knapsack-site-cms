@@ -36,12 +36,11 @@ export const DocSidebar = styled.aside`
     width: 20%;
     height: 100%;
     border-right: 1px solid ${props => props.theme.lightGrey};
-    //z-index: -1;
   }
 `;
 
 export const CategoryWrapper = styled.div`
-  padding: 1rem 0;
+  padding: 0 0 2rem 0;
   a {
     display: block;
     cursor: pointer;
@@ -49,7 +48,6 @@ export const CategoryWrapper = styled.div`
 `;
 
 export const Category = styled.p`
-  font-size: 2rem;
   font-weight: bold;
 `;
 
@@ -60,26 +58,15 @@ export const SubCategory = styled.a`
 
 export const Docs = styled.div`
   padding: 2rem;
+  max-width: 1200px;
+  p,
+  a {
+    font-size: 2rem;
+  }
   @media (min-width: 650px) {
     flex-grow: 1;
     margin-left: 20%;
   }
-`;
-
-export const Doc = styled.div`
-  margin: 3rem 0 3rem;
-`;
-
-export const SubDoc = styled.div`
-  margin: 2rem 0;
-`;
-
-export const Code = styled.code`
-  display: block;
-  background-color: ${props => props.theme.grey};
-  color: ${props => props.theme.light};
-  margin: 2rem 0;
-  padding: 2rem;
 `;
 
 /* eslint-disable react/prop-types, no-unused-vars */
@@ -88,8 +75,6 @@ const DocsPage = props => {
   if (props.router.query.item) {
     doc = docs.find(d => d.id === props.router.query.item);
   }
-
-  console.log({ docs, doc });
   return (
     <Page>
       <Wrapper>
