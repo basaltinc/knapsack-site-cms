@@ -51,8 +51,9 @@ const FooterNav = styled.div`
 
 const Copyright = styled.p`
   font-size: 1.5rem;
-  position: absolute;
-  bottom: 3px;
+  background-color: ${props => props.theme.primary};
+  padding: 0 0 1rem 2rem;
+  color: white;
 `;
 
 const FooterRight = styled.div`
@@ -65,15 +66,17 @@ const FooterRight = styled.div`
 `;
 
 const Footer = () => (
-  <StyledFooter>
-    <FooterNav>
-      <NavList />
-      <Copyright>Copyright Basalt, LLC {new Date().getFullYear()}</Copyright>
-    </FooterNav>
-    <FooterRight>
-      <Contributors />
-    </FooterRight>
-  </StyledFooter>
+  <>
+    <StyledFooter>
+      <FooterNav>
+        <NavList />
+      </FooterNav>
+      <FooterRight>
+        <Contributors />
+      </FooterRight>
+    </StyledFooter>
+    <Copyright>Copyright Basalt, LLC {new Date().getFullYear()}</Copyright>
+  </>
 );
 
 export default Footer;

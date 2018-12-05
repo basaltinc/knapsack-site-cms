@@ -47,16 +47,6 @@ const FeaturesGrid = () => (
         title=""
         copy="Builds coded components for your design system"
       />
-      {/* <MediaCard */}
-      {/* imgSrc="../static/basalt-color.svg" */}
-      {/* title="Testing" */}
-      {/* copy="Testing out this new media card situation!" */}
-      {/* /> */}
-      {/* <MediaCard */}
-      {/* imgSrc="../static/basalt-color.svg" */}
-      {/* title="Testing" */}
-      {/* copy="Testing out this new media card situation!" */}
-      {/* /> */}
     </Flex>
   </FeaturesGridWrapper>
 );
