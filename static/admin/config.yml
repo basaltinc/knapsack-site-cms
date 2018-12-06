@@ -94,7 +94,7 @@ collections:
           - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
       - label: "Features"
         name: "features"
-        file: "data/features.json"
+        file: "data/features-page.json"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
