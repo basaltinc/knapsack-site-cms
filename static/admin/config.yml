@@ -3,6 +3,8 @@ backend:
   name: github
   repo: basaltinc/bedrock-site
   branch: master
+  
+publish_mode: editorial_workflow
 
 media_folder: "static/uploads"
 public_folder: "/static/uploads"
