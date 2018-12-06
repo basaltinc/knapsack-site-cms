@@ -6,7 +6,18 @@
       "category": "Introduction",
       "docs": [
         {
-          "doc": "Intro"
+          "doc": "Introduction"
+        },
+        {
+          "doc": "Requirements"
+        }
+      ]
+    },
+    {
+      "category": "Design Tokens",
+      "docs": [
+        {
+          "doc": "Design Tokens"
         }
       ]
     }
