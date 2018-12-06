@@ -3,7 +3,7 @@ backend:
   name: github
   repo: basaltinc/bedrock-site
   branch: master
-  
+
 publish_mode: editorial_workflow
 squash_merges: true
 
@@ -47,9 +47,12 @@ collections:
                    widget: relation
                    collection: docs
                    valueField: title
-                   searchFields: 
+                   searchFields:
                      - title
-                     
+                   displayFields:
+                     - title
+                     - body
+
       - label: Testimonials
         name: testimonials
         file: "data/testimonials.json"
