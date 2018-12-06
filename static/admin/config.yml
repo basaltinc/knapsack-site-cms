@@ -76,34 +76,34 @@ collections:
               - {label: Copy, name: copy, widget: string}
               - {label: Image, name: imgSrc, widget: image}
       - label: "Pages"
-          name: "pages"
-          files:
-          - label: "About"
-            name: "about"
-            file: "data/about.md"
+        name: "pages"
+        files:
+        - label: "About"
+          name: "about"
+          file: "data/about.md"
+          fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - label: Features
+            name: features
+            widget: list
             fields:
             - {label: Title, name: title, widget: string}
-            - {label: Intro, name: intro, widget: string}
-            - {label: Body, name: body, widget: markdown}
-            - label: Features
-              name: features
-              widget: list
-              fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Items, name: items, widget: list }
-            - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
+            - {label: Items, name: items, widget: list }
+          - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
 
 
-          - label: "Features"
-            name: "features"
-            file: "data/features.md"
+        - label: "Features"
+          name: "features"
+          file: "data/features.md"
+          fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Features
+            name: features
+            widget: list
             fields:
             - {label: Title, name: title, widget: string}
-            - {label: Intro, name: intro, widget: markdown}
-            - label: Features
-              name: features
-              widget: list
-              fields:
-              - {label: Title, name: title, widget: string}
-              - {label: description, name: description, widget: string}
-              - {label: Image, name: img, widget: image}
+            - {label: description, name: description, widget: string}
+            - {label: Image, name: img, widget: image}
