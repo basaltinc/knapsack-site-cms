@@ -1,9 +1,9 @@
 {
   "testimonials": [
     {
-      "name": "Joe Karasek1",
-      "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "img": "/static/profiles/joe.png"
+      "name": "Salem Ghoweri, Pegasystems",
+      "quote": "“Unlike many of the existing tools out there — Pattern Lab, Fractal, Storybook, etc — Bedrock has design system know-how baked into it’s DNA!”",
+      "img": "/static/uploads/salem.jpg"
     },
     {
       "name": "Joe Karasek2",
