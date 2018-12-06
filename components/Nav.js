@@ -6,8 +6,8 @@ export const NavList = () => (
     <Link href="/#getting-started">
       <a>Getting Started</a>
     </Link>
-    <Link href="/features">
-      <a>Features</a>
+    <Link href="/about">
+      <a>About</a>
     </Link>
     <Link href="/docs">
       <a>Docs</a>
