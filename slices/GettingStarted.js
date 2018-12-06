@@ -3,7 +3,6 @@ import Button from '../components/Button';
 import { ButtonsWrapper } from '../components/styles/Utils';
 import { github } from '../data/settings';
 
-
 const GettingStartedWrapper = styled.div`
   padding: 4rem 2rem;
   background: linear-gradient(

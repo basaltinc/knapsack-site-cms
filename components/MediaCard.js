@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 const MediaCardWrapper = styled.div`
   display: block;
   flex: 1 0 250px;
-  margin: ${props => (props.horizontal ? '1rem' : '2rem 1rem')};
-  ${props => (props.horizontal ? 'display: flex;' : '')};
+  margin: ${props => (props.isHorizontal ? '1rem' : '2rem 1rem')};
+  ${props => (props.isHorizontal ? 'display: flex;' : '')};
 `;
 
 const MediaCardIcon = styled.div`
@@ -26,7 +26,7 @@ const MediaCardText = styled.div`
 `;
 
 const MediaCard = props => (
-  <MediaCardWrapper horizontal={props.horizontal}>
+  <MediaCardWrapper isHorizontal={props.isHorizontal}>
     <MediaCardIcon>
       <img src={props.imgSrc} alt={props.title} />
     </MediaCardIcon>
@@ -40,7 +40,7 @@ const MediaCard = props => (
 MediaCard.defaultProps = {
   title: '',
   copy: '',
-  horizontal: false,
+  isHorizontal: false,
   textAlign: 'center',
 };
 
@@ -48,7 +48,7 @@ MediaCard.propTypes = {
   title: PropTypes.string,
   copy: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
-  horizontal: PropTypes.bool,
+  isHorizontal: PropTypes.bool,
   textAlign: PropTypes.string,
 };
 

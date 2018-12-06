@@ -68,7 +68,7 @@ export default () => (
           {features.map(feature => (
             <React.Fragment key={feature.imgSrc}>
               <MediaCard
-                horizontal
+                isHorizontal
                 textAlign="left"
                 imgSrc={feature.imgSrc}
                 title={feature.title}
