@@ -1,14 +1,14 @@
 {
   "testimonials": [
     {
-      "name": "Joe Karasek1",
-      "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "img": "/static/profiles/joe.png"
+      "name": "Salem Ghoweri, Lead Frontend Architect, Pegasystems",
+      "quote": "“Unlike many of the existing tools out there — Pattern Lab, Fractal, Storybook, etc — Bedrock has design system know-how baked into it’s DNA!”",
+      "img": "/static/uploads/salemsquare.jpg"
     },
     {
-      "name": "Joe Karasek2",
-      "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "img": "/static/profiles/joe.png"
+      "name": "Christopher Bloom, Dir. of Engineering, Phase2",
+      "quote": "\"I really like Bedrock lots.\"",
+      "img": "/static/uploads/bloom.jpeg"
     },
     {
       "name": "Joe Karasek23",
