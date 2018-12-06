@@ -18,13 +18,6 @@ const WhatIsBedrockWrapper = styled.div`
     height: 125px;
     width: 100%;
     margin: 0 50px 0 0;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      color-stop(49.9%, ${props => props.theme.primaryExtra}),
-      color-stop(50.1%, transparent)
-    );
     background: linear-gradient(
       to right bottom,
       ${props => props.theme.primaryExtra} 49.9%,

@@ -9,6 +9,7 @@ const theme = {
   primary: '#1a1f4c',
   primaryExtra: '#343e98',
   secondary: '#f5a426',
+  secondaryExtra: '#f56f17',
   tertiary: '#364852',
   accent: '#7faba8',
   light: '#f8f8f8',
