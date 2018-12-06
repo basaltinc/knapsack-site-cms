@@ -3,13 +3,13 @@ import { NavStyles, NavListStyles } from './styles/NavStyles';
 
 export const NavList = () => (
   <>
-    <Link href="/#getting-started">
-      <a>Getting Started</a>
+    <Link href="/features" prefetch>
+      <a>Features</a>
     </Link>
-    <Link href="/about">
+    <Link href="/about" prefetch>
       <a>About</a>
     </Link>
-    <Link href="/docs">
+    <Link href="/docs" prefetch>
       <a>Docs</a>
     </Link>
     <Link href="mailto:bedrock@basalt.io">

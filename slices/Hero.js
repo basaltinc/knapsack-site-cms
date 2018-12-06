@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import { hero } from '../data/settings';
+import { ButtonsWrapper } from '../components/styles/Utils';
 
 const HeroWrapper = styled.div`
   background: linear-gradient(
@@ -16,10 +17,6 @@ const HeroWrapper = styled.div`
     font-size: 6rem;
     margin-bottom: 2rem;
   }
-`;
-
-const ButtonsWrapper = styled.div`
-  padding: 6rem 0;
 `;
 
 const Hero = () => (

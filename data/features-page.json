@@ -1,0 +1,28 @@
+{
+  "title": "Features",
+  "intro": "Bedrock comes with some sweet features. It can even make you a sandwich! It also allows your design system to shine LIKE A STAR!",
+  "body": "Morbi rhoncus turpis id rutrum facilisis. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu congue odio, sit amet porta urna. Vivamus eu lacus convallis diam semper sodales in in nulla. Praesent commodo id enim at eleifend. Praesent et pulvinar tellus. Praesent vehicula pellentesque sem, a faucibus nibh.",
+  "features": [
+    {
+      "imgSrc": "/static/icons/route.svg",
+      "title": "Page Builder",
+      "copy": "Page Builder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu congue odio, sit amet porta urna."
+    },
+    {
+      "imgSrc": "/static/icons/documentation.svg",
+      "title": "Live Component View",
+      "copy": "Live Component View Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu congue odio, sit amet porta urna."
+    },
+    {
+      "imgSrc": "/static/icons/pagebuilder.svg",
+      "title": "Schema Powered",
+      "copy": "Schema Powered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu congue odio, sit amet porta urna."
+    },
+    {
+      "imgSrc": "/static/icons/component.svg",
+      "title": "Design Tokens",
+      "copy": "Design Tokens Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu congue odio, sit amet porta urna."
+    }
+  ],
+  "postFeaturesCopy": "Morbi rhoncus turpis id rutrum facilisis. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu congue odio, sit amet porta urna. Vivamus eu lacus convallis diam semper sodales in in nulla. Praesent commodo id enim at eleifend."
+}
