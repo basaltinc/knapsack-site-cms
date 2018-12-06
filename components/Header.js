@@ -7,10 +7,13 @@ const StyledHeader = styled.header`
   position: sticky;
   background-color: ${props => props.theme.primary};
   display: flex;
-  min-height: 50px;
+  min-height: 70px;
   z-index: 99;
   padding: 1rem 0;
   justify-content: space-between;
+  a {
+    z-index: 9999;
+  }
 `;
 
 const Logo = styled.div`

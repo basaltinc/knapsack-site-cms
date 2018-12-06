@@ -19,7 +19,7 @@ const Code = styled.code`
   color: #f8f8f8;
   margin: 2rem 0;
   max-width: 600px;
-  padding: 2rem;
+  padding: 4rem;
   margin: 4rem auto 2rem;
   text-align: left;
 `;

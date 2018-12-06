@@ -90,7 +90,7 @@ export const NavListStyles = styled.nav`
   margin-right: 2rem;
   pointer-events: none;
   transition: 0.5s;
-  margin-top: 8px;
+  margin-top: 5px;
   a {
     padding: 0.5rem 3rem;
     display: inline-block;
