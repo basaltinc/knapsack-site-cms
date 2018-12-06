@@ -92,16 +92,16 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Items, name: items, widget: list }
           - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
-      - label: "Features"
-        name: "features"
-        file: "data/features.json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Features
-            name: features
-            widget: list
-            fields:
-            - {label: Title, name: title, widget: string}
-            - {label: description, name: description, widget: string}
-            - {label: Image, name: img, widget: image}
+#      - label: "Features"
+#        name: "features"
+#        file: "data/features.json"
+#        fields:
+#          - {label: Title, name: title, widget: string}
+#          - {label: Intro, name: intro, widget: markdown}
+#          - label: Features
+#            name: features
+#            widget: list
+#            fields:
+#            - {label: Title, name: title, widget: string}
+#            - {label: description, name: description, widget: string}
+#            - {label: Image, name: img, widget: image}

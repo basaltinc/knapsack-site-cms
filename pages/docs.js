@@ -98,6 +98,7 @@ const DocsPage = props => {
           </CategoryWrapper>
         </DocSidebar>
         <Docs>
+          <h2>{doc.data.title}</h2>
           <div dangerouslySetInnerHTML={{ __html: doc.content }} />
         </Docs>
       </Wrapper>
