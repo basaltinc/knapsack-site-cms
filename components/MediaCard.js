@@ -5,45 +5,51 @@ import PropTypes from 'prop-types';
 const MediaCardWrapper = styled.div`
   display: block;
   flex: 1 0 250px;
-  margin: 1rem;
+  margin: ${props => (props.isHorizontal ? '1rem' : '2rem 1rem')};
+  ${props => (props.isHorizontal ? 'display: flex;' : '')};
 `;
 
-const MediaCardTop = styled.div`
+const MediaCardIcon = styled.div`
   img {
-    width: 100%;
-    max-height: 200px;
+    width: auto;
+    margin: 0 auto;
+    max-height: 250px;
     display: block;
-    padding: 2rem;
+    padding: 3rem;
   }
 `;
 
-const MediaCardBottom = styled.div`
+const MediaCardText = styled.div`
   color: ${props => props.theme.primary};
   padding: 2rem;
-  text-align: center;
+  text-align: ${props => props.textAlign};
 `;
 
 const MediaCard = props => (
-  <MediaCardWrapper>
-    <MediaCardTop>
+  <MediaCardWrapper isHorizontal={props.isHorizontal}>
+    <MediaCardIcon>
       <img src={props.imgSrc} alt={props.title} />
-    </MediaCardTop>
-    <MediaCardBottom>
+    </MediaCardIcon>
+    <MediaCardText textAlign={props.textAlign}>
       <h4>{props.title}</h4>
       <p>{props.copy}</p>
-    </MediaCardBottom>
+    </MediaCardText>
   </MediaCardWrapper>
 );
 
 MediaCard.defaultProps = {
   title: '',
   copy: '',
+  isHorizontal: false,
+  textAlign: 'center',
 };
 
 MediaCard.propTypes = {
   title: PropTypes.string,
   copy: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
+  isHorizontal: PropTypes.bool,
+  textAlign: PropTypes.string,
 };
 
 export default MediaCard;

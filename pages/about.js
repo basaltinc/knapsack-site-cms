@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Page from '../layouts/Page';
 import { title, intro, body, features, postFeaturesCopy } from '../data/about';
+import { ButtonsWrapper } from '../components/styles/Utils';
+import Button from '../components/Button';
+import { github } from '../data/settings';
 
 const About = styled.div`
   &:before {
@@ -31,7 +34,7 @@ const Hero = styled.div`
 
 const Inner = styled.div`
   max-width: 1300px;
-  padding: 0 3rem;
+  padding: 0 3rem 5rem;
   margin: 0 auto;
   h3 {
     padding: 1rem 4rem;
@@ -78,6 +81,12 @@ export default () => (
           ))}
         </Features>
         <p>{postFeaturesCopy}</p>
+        <ButtonsWrapper>
+          <Button isInverted link={github}>
+            GitHub
+          </Button>
+          <Button link="/docs">Documentation</Button>
+        </ButtonsWrapper>
       </Inner>
     </About>
   </Page>

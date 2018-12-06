@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import Button from '../components/Button';
+import { ButtonsWrapper } from '../components/styles/Utils';
+import { github } from '../data/settings';
 
 const GettingStartedWrapper = styled.div`
   padding: 4rem 2rem;
-  // background-color: ${props => props.theme.primary};
   background: linear-gradient(
     180deg,
     ${props => props.theme.primaryExtra} 0,
@@ -33,9 +34,14 @@ const GettingStarted = () => (
       npm install <br />
       npm start <br />
     </Code>
-    <Button color="#1A1F4C" link="/docs">
-      Read the Docs
-    </Button>
+    <ButtonsWrapper>
+      <Button color="#1A1F4C" link="/docs">
+        Read the Docs
+      </Button>
+      <Button color="#1A1F4C" isInverted link={github}>
+        GitHub
+      </Button>
+    </ButtonsWrapper>
   </GettingStartedWrapper>
 );
 

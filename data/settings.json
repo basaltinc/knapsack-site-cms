@@ -1,6 +1,7 @@
 {
   "hero": "Welcome to Bedrock",
   "whatIsBedrock": "A new, open source, scalable platform for multi-brand design systems.",
+  "github": "https://github.com/basaltinc/bedrock/",
   "docCategories": [
     {
       "category": "Introduction",
