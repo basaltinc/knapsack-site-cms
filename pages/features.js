@@ -66,17 +66,16 @@ export default () => (
         <p>{body}</p>
         <FeaturesWrapper>
           {features.map(feature => (
-            <>
+            <React.Fragment key={feature.imgSrc}>
               <MediaCard
                 horizontal
                 textAlign="left"
-                key={feature.imgSrc}
                 imgSrc={feature.imgSrc}
                 title={feature.title}
                 copy={feature.copy}
               />
               <br />
-            </>
+            </React.Fragment>
           ))}
         </FeaturesWrapper>
         <p>{postFeaturesCopy}</p>
