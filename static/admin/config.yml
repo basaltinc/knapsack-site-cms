@@ -31,6 +31,25 @@ collections:
         fields:
           - { label: Hero, name: hero, widget: string }
           - { label: What Is Bedrock, name: whatIsBedrock, widget: string }
+          - label: Doc Categories
+            name: docCategories
+            widget: list
+            fields:
+             - label: Category
+               name: category
+               widget: string
+             - label: Docs
+               name: docs
+               widget: list
+               fields:
+                 - label: Doc
+                   name: doc
+                   widget: relation
+                   collection: docs
+                   valueField: title
+                   searchFields: 
+                     - title
+                     
       - label: Testimonials
         name: testimonials
         file: "data/testimonials.json"
