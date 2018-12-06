@@ -77,7 +77,7 @@ const StyledPage = styled.div`
 const PageWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 1fr 175px;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-areas:
     'header'
     'main'
