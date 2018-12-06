@@ -5,6 +5,7 @@ backend:
   branch: master
   
 publish_mode: editorial_workflow
+squash_merges: true
 
 media_folder: "static/uploads"
 public_folder: "/static/uploads"
