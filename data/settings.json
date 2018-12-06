@@ -1,4 +1,14 @@
 {
   "hero": "Welcome to Bedrock",
-  "whatIsBedrock": "A new, open source, scalable platform for multi-brand design systems."
+  "whatIsBedrock": "A new, open source, scalable platform for multi-brand design systems.",
+  "docCategories": [
+    {
+      "category": "Introduction",
+      "docs": [
+        {
+          "doc": "Intro"
+        }
+      ]
+    }
+  ]
 }
