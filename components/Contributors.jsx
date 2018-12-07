@@ -26,10 +26,8 @@ class Contributors extends Component {
   }
 
   async componentDidMount() {
-    // temporary endpoint until bedrock is public
     const apiEndpoint =
-      'https://api.github.com/repos/marywarrington/burrito-adventure/contributors';
-    // const apiEndpoint = 'https://api.github.com/repos/basaltinc/bedrock/contributors';
+      'https://api.github.com/repos/basaltinc/bedrock/contributors';
     await window
       .fetch(apiEndpoint)
       .then(res => res.json())
