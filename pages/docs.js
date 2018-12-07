@@ -4,6 +4,7 @@ import Link from 'next/link';
 import getConfig from 'next/config';
 import styled from 'styled-components';
 import Page from '../layouts/Page';
+import { docCategories } from '../data/settings';
 
 const { publicRuntimeConfig } = getConfig();
 const { docs } = publicRuntimeConfig;
@@ -49,6 +50,7 @@ export const CategoryWrapper = styled.div`
 
 export const Category = styled.p`
   font-weight: bold;
+  margin-top: 2rem;
 `;
 
 export const SubCategory = styled.a`
@@ -79,21 +81,29 @@ const DocsPage = props => {
     <Page>
       <Wrapper>
         <DocSidebar>
+          <Category>Documentation</Category>
           <CategoryWrapper>
-            <Category>Documentation</Category>
-            {docs.map(docItem => (
-              <div key={docItem.id}>
-                <Link
-                  href={{
-                    pathname: '/docs',
-                    query: {
-                      item: docItem.id,
-                    },
-                  }}
-                >
-                  <SubCategory>{docItem.data.title}</SubCategory>
-                </Link>
-              </div>
+            {docCategories.map(category => (
+              <React.Fragment key={category.category}>
+                <Category key={category.category}>{category.category}</Category>
+                {category.docs.map(docItem => {
+                  const theDoc = docs.find(d => d.data.title === docItem.doc);
+                  return (
+                    <div key={theDoc.id}>
+                      <Link
+                        href={{
+                          pathname: '/docs',
+                          query: {
+                            item: theDoc.id,
+                          },
+                        }}
+                      >
+                        <SubCategory>{theDoc.data.title}</SubCategory>
+                      </Link>
+                    </div>
+                  );
+                })}
+              </React.Fragment>
             ))}
           </CategoryWrapper>
         </DocSidebar>

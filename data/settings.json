@@ -24,6 +24,11 @@
           "doc": "Design Tokens"
         }
       ]
+    },
+    {
+      "category": "Patterns",
+      "docs": [
+      ]
     }
   ]
 }
