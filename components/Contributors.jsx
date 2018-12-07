@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { github } from '../data/settings';
 
 const ContributorsWrapper = styled.div`
   //max-width: 50%;
@@ -46,7 +47,9 @@ class Contributors extends Component {
     const bedrockContributors = this.state.contributors;
     return (
       <ContributorsWrapper>
-        <p>Bedrock Contributors</p>
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          Bedrock Contributors
+        </a>
         <AvatarWrapper>
           {bedrockContributors.map(contributor => (
             <Link href={contributor.url} key={contributor.url}>
