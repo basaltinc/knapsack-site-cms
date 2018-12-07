@@ -32,7 +32,7 @@ export const DocSidebar = styled.aside`
   text-align: left;
   justify-content: space-between;
   padding: 2rem;
-  @media (min-width: 650px) {
+  @media (min-width: 800px) {
     position: fixed;
     width: 20%;
     height: 100%;
@@ -65,7 +65,10 @@ export const Docs = styled.div`
   a {
     font-size: 2rem;
   }
-  @media (min-width: 650px) {
+  pre {
+    margin: 2rem 0;
+  }
+  @media (min-width: 800px) {
     flex-grow: 1;
     margin-left: 20%;
   }
