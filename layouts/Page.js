@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Meta from '../components/Meta';
+import { initGA, logPageView } from '../utils/analytics';
 
 const theme = {
   primary: '#1a1f4c',
@@ -93,19 +94,31 @@ const Body = styled.div`
   grid-area: main;
 `;
 
-const Page = props => (
-  <ThemeProvider theme={theme}>
-    <StyledPage>
-      <GlobalStyle />
-      <Meta />
-      <PageWrapper>
-        <Header />
-        <Body>{props.children}</Body>
-        <Footer />
-      </PageWrapper>
-    </StyledPage>
-  </ThemeProvider>
-);
+export default class Page extends React.Component {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  }
+
+  render() {
+    return (
+      <ThemeProvider theme={theme}>
+        <StyledPage>
+          <GlobalStyle />
+          <Meta />
+          <PageWrapper>
+            <Header />
+            <Body>{this.props.children}</Body>
+            <Footer />
+          </PageWrapper>
+        </StyledPage>
+      </ThemeProvider>
+    );
+  }
+}
 
 Page.propTypes = {
   children: PropTypes.oneOfType([
@@ -113,5 +126,3 @@ Page.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
-
-export default Page;
