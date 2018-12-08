@@ -52,7 +52,7 @@ class Contributors extends Component {
         </a>
         <AvatarWrapper>
           {bedrockContributors.map(contributor => (
-            <Link href={contributor.url} key={contributor.url}>
+            <Link href={contributor.html_url} key={contributor.html_url}>
               <a>
                 <img src={contributor.avatar_url} alt={contributor.username} />
               </a>
