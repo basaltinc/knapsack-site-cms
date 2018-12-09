@@ -33,9 +33,7 @@ export const DocSidebar = styled.aside`
   justify-content: space-between;
   padding: 2rem;
   @media (min-width: 800px) {
-    position: fixed;
     width: 20%;
-    height: 100%;
     border-right: 1px solid ${props => props.theme.lightGrey};
   }
 `;
@@ -70,7 +68,6 @@ export const Docs = styled.div`
   }
   @media (min-width: 800px) {
     flex-grow: 1;
-    margin-left: 20%;
   }
 `;
 
