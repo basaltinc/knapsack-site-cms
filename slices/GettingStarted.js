@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Button from '../components/Button';
 import { ButtonsWrapper } from '../components/styles/Utils';
-import { github } from '../data/settings';
 
 const GettingStartedWrapper = styled.div`
   padding: 4rem 2rem;
@@ -38,7 +37,7 @@ const GettingStarted = () => (
       <Button color="#1A1F4C" link="/docs">
         Read the Docs
       </Button>
-      <Button color="#1A1F4C" isInverted link={github}>
+      <Button color="#1A1F4C" isInverted link="https://github.com/basaltinc/bedrock">
         GitHub
       </Button>
     </ButtonsWrapper>
