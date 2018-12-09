@@ -93,14 +93,7 @@ const DocsPage = props => {
                   const theDoc = docs.find(d => d.data.title === docItem.doc);
                   return (
                     <div key={theDoc.id}>
-                      <Link
-                        href={{
-                          pathname: '/docs',
-                          query: {
-                            item: theDoc.id,
-                          },
-                        }}
-                      >
+                      <Link href={`/docs/${theDoc.id}`}>
                         <SubCategory>{theDoc.data.title}</SubCategory>
                       </Link>
                     </div>
