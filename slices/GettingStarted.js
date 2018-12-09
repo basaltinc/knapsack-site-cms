@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Button from '../components/Button';
 import { ButtonsWrapper } from '../components/styles/Utils';
-import { github } from '../data/settings';
+
+const github = 'https://github.com/basaltinc/bedrock';
 
 const GettingStartedWrapper = styled.div`
   padding: 4rem 2rem;
