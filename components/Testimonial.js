@@ -6,13 +6,15 @@ const TestimonialWrapper = styled.figure`
   position: relative;
   overflow: hidden;
   margin: 0;
-  width: 400px;
   display: flex;
   min-height: 200px;
   text-align: left;
   box-shadow: ${props => props.theme.bs};
   font-size: 1.8rem;
   background-color: #ffffff;
+  @media (min-width: 440px) {
+    width: 400px;
+  }
   figcaption {
     display: flex;
     flex-direction: column;
@@ -21,14 +23,15 @@ const TestimonialWrapper = styled.figure`
     z-index: 1;
     opacity: 1;
     padding: 30px 10px;
+    position: relative;
     &:before {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
-      right: 59%;
+      left: -105px;
       content: '';
-      width: 0;
+      width: 105px;
       height: 0;
       border-style: solid;
       border-width: 250px 105px 250px 0px;
