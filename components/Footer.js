@@ -77,7 +77,18 @@ const Footer = () => (
         <Contributors />
       </FooterRight>
     </StyledFooter>
-    <Copyright>Copyright Basalt, LLC {new Date().getFullYear()}</Copyright>
+    <Copyright>
+      Copyright{' '}
+      <a
+        style={{ color: 'white' }}
+        href="https://www.basalt.io"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Basalt, LLC
+      </a>{' '}
+      {new Date().getFullYear()}
+    </Copyright>
   </>
 );
 

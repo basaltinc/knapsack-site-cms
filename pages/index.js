@@ -10,6 +10,10 @@ import GettingStarted from '../slices/GettingStarted';
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      latestRelease: [],
+      ready: false,
+    };
   }
 
   componentDidMount() {
@@ -17,18 +21,23 @@ class Home extends React.Component {
       .fetch('https://api.github.com/repos/basaltinc/bedrock/releases')
       .then(res => res.json())
       .then(releases => {
-        const [latestRelease] = releases;
-        console.log({ latestRelease });
+        this.setState({
+          latestRelease: releases[0],
+          ready: true,
+        });
       });
   }
 
   render() {
+    if (!this.state.ready) {
+      return <p>Loading...</p>;
+    }
     return (
       <Page>
         <Hero />
         <WhatIsBedrock />
         <FeaturesGrid />
-        <GettingStarted />
+        <GettingStarted latestRelease={this.state.latestRelease} />
         <Testimonials />
         <Contact />
       </Page>
