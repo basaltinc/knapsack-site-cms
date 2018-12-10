@@ -1,13 +1,20 @@
 import Link from 'next/link';
 import { NavStyles, NavListStyles } from './styles/NavStyles';
+import { github } from '../data/settings';
 
 export const NavList = () => (
   <>
-    <Link href="/features" prefetch>
-      <a>Features</a>
-    </Link>
-    <Link href="/about" prefetch>
-      <a>About</a>
+    {/*<Link href="/features" prefetch>*/}
+      {/*<a>Features</a>*/}
+    {/*</Link>*/}
+    {/*<Link href="/about" prefetch>*/}
+      {/*<a>About</a>*/}
+    {/*</Link>*/}
+    {/*<Link href="https://demo.getbedrock.com" prefetch>*/}
+      {/*<a>Demo</a>*/}
+    {/*</Link>*/}
+    <Link href={github} prefetch>
+      <a>GitHub</a>
     </Link>
     <Link href="/docs" prefetch>
       <a>Docs</a>
