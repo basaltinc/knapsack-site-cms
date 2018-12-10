@@ -7,16 +7,13 @@
       "category": "Introduction",
       "docs": [
         {
-          "doc": "Introduction"
+          "doc": "Getting Started"
         },
         {
-          "doc": "Requirements"
+          "doc": "Configuration"
         },
         {
-          "doc": "Installation"
-        },
-        {
-          "doc": "CLI"
+          "doc": "Section Overviews"
         }
       ]
     },
@@ -33,6 +30,14 @@
       "docs": [
         {
           "doc": "Patterns"
+        }
+      ]
+    },
+     {
+      "category": "Advanced",
+      "docs": [
+        {
+          "doc": "Deployment"
         }
       ]
     }
