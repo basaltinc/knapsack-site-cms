@@ -7,7 +7,7 @@ export const NavList = () => (
     <Link href={github} prefetch>
       <a>GitHub</a>
     </Link>
-    <Link href="/docs" prefetch>
+    <Link href="/docs/getting-started" prefetch>
       <a>Docs</a>
     </Link>
     <Link href="mailto:bedrock@basalt.io">
