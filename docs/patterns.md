@@ -6,7 +6,7 @@ order: 80
 
 Patterns are the visual components that make up a design system. 
 
-Unlike other pattern library tools which rely on the creation and continued maintenance of demonstration files, Bedrock relies on data models defined in Json Schema to power the automatic creation of all the variations of any given Pattern.
+Unlike other pattern library tools which rely on the creation and continued maintenance of demonstration files, Bedrock relies on data models defined through [Json Schema](https://json-schema.org/) to power the automatic creation of all the variations of any given Pattern.
 
 ## Setting Up Patterns for Bedrock
 
@@ -157,5 +157,6 @@ module.exports = {
     },
   ],
 };
-
 ```
+
+See [Simple Example](https://github.com/basaltinc/bedrock/tree/develop/examples/simple) for further examples on setting up, configuring, and including patterns in Bedrock.

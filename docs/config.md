@@ -8,7 +8,6 @@ title: Configuration
 This is the main config file. 
 
 ```js
-/** @type {BedrockConfig} */
 const config = {
   patterns: [ './assets/patterns/*' ],
   docsDir: './docs',
