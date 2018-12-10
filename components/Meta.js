@@ -10,7 +10,7 @@ const Meta = () => (
     <meta charSet="utf-8" />
     <meta
       name="description"
-      content="Bedrock is an open source, scalable platform for multi-brand design systems."
+      content="Bedrock is an open-source, scalable platform for multi-brand design systems, built by Basalt."
     />
     <link rel="shortcut icon" href="/static/favicon.ico" />
     <title>Bedrock</title>
