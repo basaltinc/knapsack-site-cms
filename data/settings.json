@@ -10,10 +10,10 @@
           "doc": "Getting Started"
         },
         {
-          "doc": "Configuration"
+          "doc": "Requirements"
         },
         {
-          "doc": "Section Overviews"
+          "doc": "Configuration"
         }
       ]
     },
@@ -30,14 +30,6 @@
       "docs": [
         {
           "doc": "Patterns"
-        }
-      ]
-    },
-     {
-      "category": "Advanced",
-      "docs": [
-        {
-          "doc": "Deployment"
         }
       ]
     }
