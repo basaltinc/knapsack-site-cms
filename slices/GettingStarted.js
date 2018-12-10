@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+/* eslint-disable */
+// import PropTypes from 'prop-types';
+/* eslint-enable */
 import Button from '../components/Button';
 import { ButtonsWrapper } from '../components/styles/Utils';
 
@@ -30,6 +32,7 @@ const Code = styled.code`
   text-align: left;
 `;
 
+// eslint-disable-next-line no-unused-vars
 const GettingStarted = props => (
   <GettingStartedWrapper id="getting-started">
     <h2>Getting Started</h2>
@@ -39,16 +42,16 @@ const GettingStarted = props => (
       npm install <br />
       npm start <br />
     </Code>
-    <p>
-      Latest Release:{' '}
-      <a
-        href={props.latestRelease.html_url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {props.latestRelease.name}
-      </a>
-    </p>
+    {/* <p> */}
+    {/* Latest Release:{' '} */}
+    {/* <a */}
+    {/* href={props.latestRelease.html_url} */}
+    {/* target="_blank" */}
+    {/* rel="noopener noreferrer" */}
+    {/* > */}
+    {/* {props.latestRelease.name} */}
+    {/* </a> */}
+    {/* </p> */}
     <ButtonsWrapper>
       <Button color="#1A1F4C" link="/docs/getting-started">
         Read the Docs
@@ -59,8 +62,9 @@ const GettingStarted = props => (
     </ButtonsWrapper>
   </GettingStartedWrapper>
 );
-
-GettingStarted.propTypes = {
-  latestRelease: PropTypes.object.isRequired,
-};
+/* eslint-disable */
+// GettingStarted.propTypes = {
+  // latestRelease: PropTypes.object.isRequired,
+// };
+/* eslint-enable */
 export default GettingStarted;

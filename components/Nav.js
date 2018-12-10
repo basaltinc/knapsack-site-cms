@@ -7,7 +7,7 @@ export const NavList = () => (
     <a href={github} target="_blank" rel="noopener noreferrer">
       GitHub
     </a>
-    <Link href="/docs/getting-started" prefetch>
+    <Link href="/docs/getting-started">
       <a>Docs</a>
     </Link>
     <Link href="mailto:bedrock@basalt.io">

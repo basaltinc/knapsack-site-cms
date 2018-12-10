@@ -11,22 +11,23 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      latestRelease: [],
-      ready: false,
+      ready: true,
     };
   }
 
-  componentDidMount() {
-    window
-      .fetch('https://api.github.com/repos/basaltinc/bedrock/releases')
-      .then(res => res.json())
-      .then(releases => {
-        this.setState({
-          latestRelease: releases[0],
-          ready: true,
-        });
-      });
-  }
+  /* eslint-disable */
+  // componentDidMount() {
+  //   window
+  //     .fetch('https://api.github.com/repos/basaltinc/bedrock/releases')
+  //     .then(res => res.json())
+  //     .then(releases => {
+  //       this.setState({
+  //         latestRelease: releases[0],
+  //         ready: true,
+  //       });
+  //     });
+  // }
+  /* eslint-enable */
 
   render() {
     if (!this.state.ready) {
@@ -37,7 +38,7 @@ class Home extends React.Component {
         <Hero />
         <WhatIsBedrock />
         <FeaturesGrid />
-        <GettingStarted latestRelease={this.state.latestRelease} />
+        <GettingStarted />
         <Testimonials />
         <Contact />
       </Page>

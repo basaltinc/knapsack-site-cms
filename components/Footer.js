@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { NavList } from './Nav';
-import Contributors from './Contributors';
+/* eslint-disable */
+// import Contributors from './Contributors';
+/* eslint-enable */
 
 const StyledFooter = styled.footer`
   background-color: ${props => props.theme.primary};
@@ -74,7 +76,9 @@ const Footer = () => (
         <NavList />
       </FooterNav>
       <FooterRight>
-        <Contributors />
+        {/* eslint-disable */}
+        {/*<Contributors />*/}
+        {/* eslint-enable */}
       </FooterRight>
     </StyledFooter>
     <Copyright>
