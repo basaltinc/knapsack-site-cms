@@ -9,11 +9,6 @@
       "name": "Christopher Bloom, Dir. of Engineering, Phase2",
       "quote": "\"Bedrock fundamentally changes the way we think about building Design Systems.\"",
       "img": "/static/uploads/bloom.jpeg"
-    },
-    {
-      "name": "Joe Karasek23",
-      "quote": "Twig, React, Json, compile, component, css, test driven, …",
-      "img": "/static/uploads/joe.png"
     }
   ]
 }
