@@ -36,7 +36,7 @@ const GettingStarted = () => (
       npm start <br />
     </Code>
     <ButtonsWrapper>
-      <Button color="#1A1F4C" link="/docs">
+      <Button color="#1A1F4C" link="/docs/getting-started">
         Read the Docs
       </Button>
       <Button color="#1A1F4C" isInverted link={github}>
