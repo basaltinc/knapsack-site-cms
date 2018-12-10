@@ -39,16 +39,16 @@ const GettingStarted = props => (
       npm install <br />
       npm start <br />
     </Code>
-    <p>
-      Latest Release:{' '}
-      <a
-        href={props.latestRelease.html_url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {props.latestRelease.name}
-      </a>
-    </p>
+    {/*<p>*/}
+      {/*Latest Release:{' '}*/}
+      {/*<a*/}
+        {/*href={props.latestRelease.html_url}*/}
+        {/*target="_blank"*/}
+        {/*rel="noopener noreferrer"*/}
+      {/*>*/}
+        {/*{props.latestRelease.name}*/}
+      {/*</a>*/}
+    {/*</p>*/}
     <ButtonsWrapper>
       <Button color="#1A1F4C" link="/docs/getting-started">
         Read the Docs

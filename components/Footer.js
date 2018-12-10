@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavList } from './Nav';
-import Contributors from './Contributors';
+// import Contributors from './Contributors';
 
 const StyledFooter = styled.footer`
   background-color: ${props => props.theme.primary};
@@ -74,7 +74,7 @@ const Footer = () => (
         <NavList />
       </FooterNav>
       <FooterRight>
-        <Contributors />
+        {/*<Contributors />*/}
       </FooterRight>
     </StyledFooter>
     <Copyright>
