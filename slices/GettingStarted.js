@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Button from '../components/Button';
 import { ButtonsWrapper } from '../components/styles/Utils';
 
@@ -13,6 +14,9 @@ const GettingStartedWrapper = styled.div`
   );
   color: ${props => props.theme.light};
   text-align: center;
+  a {
+    color: white;
+  }
 `;
 
 const Code = styled.code`
@@ -26,7 +30,7 @@ const Code = styled.code`
   text-align: left;
 `;
 
-const GettingStarted = () => (
+const GettingStarted = props => (
   <GettingStartedWrapper id="getting-started">
     <h2>Getting Started</h2>
     <Code>
@@ -35,6 +39,16 @@ const GettingStarted = () => (
       npm install <br />
       npm start <br />
     </Code>
+    <p>
+      Latest Release:{' '}
+      <a
+        href={props.latestRelease.html_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {props.latestRelease.name}
+      </a>
+    </p>
     <ButtonsWrapper>
       <Button color="#1A1F4C" link="/docs/getting-started">
         Read the Docs
@@ -46,4 +60,7 @@ const GettingStarted = () => (
   </GettingStartedWrapper>
 );
 
+GettingStarted.propTypes = {
+  latestRelease: PropTypes.object.isRequired,
+};
 export default GettingStarted;

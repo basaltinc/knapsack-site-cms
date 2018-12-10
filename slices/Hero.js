@@ -19,17 +19,41 @@ const HeroWrapper = styled.div`
   }
 `;
 
+const Inner = styled.div`
+  max-width: 700px;
+  margin: 0 auto;
+`;
+
+const Basalt = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  img {
+    display: inline-block;
+    height: 20px;
+    margin-left: 10px;
+  }
+`;
 const Hero = () => (
   <HeroWrapper>
-    <h2>{hero}</h2>
-    <ButtonsWrapper>
-      <Button color="#343e98" isInverted link="#getting-started">
-        Get Started
-      </Button>
-      <Button color="#343e98" link="https://demo.getbedrock.com">
-        Demo
-      </Button>
-    </ButtonsWrapper>
+    <Inner>
+      <h2>{hero}</h2>
+      <Basalt>
+        <p>by</p>
+        <a href="https://basalt.io" target="_blank" rel="noopener noreferrer">
+          <img src="/static/BASALT_master_white-color.svg" alt="basalt" />
+        </a>
+      </Basalt>
+      <ButtonsWrapper>
+        <Button color="#343e98" isInverted link="#getting-started">
+          Install
+        </Button>
+        <Button color="#343e98" link="https://demo.getbedrock.com">
+          Demo
+        </Button>
+      </ButtonsWrapper>
+    </Inner>
   </HeroWrapper>
 );
 
