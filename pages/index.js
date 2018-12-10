@@ -16,6 +16,7 @@ class Home extends React.Component {
     };
   }
 
+  /* eslint-disable */
   // componentDidMount() {
   //   window
   //     .fetch('https://api.github.com/repos/basaltinc/bedrock/releases')
@@ -27,6 +28,7 @@ class Home extends React.Component {
   //       });
   //     });
   // }
+  /* eslint-enable */
 
   render() {
     if (!this.state.ready) {
