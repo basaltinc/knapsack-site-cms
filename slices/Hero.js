@@ -49,7 +49,11 @@ const Hero = () => (
         <Button color="#343e98" isInverted link="#getting-started">
           Install
         </Button>
-        <Button color="#343e98" link="https://demo.getbedrock.com">
+        <Button
+          color="#343e98"
+          isTargetBlank
+          link="https://demo.getbedrock.com"
+        >
           Demo
         </Button>
       </ButtonsWrapper>

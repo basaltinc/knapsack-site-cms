@@ -4,9 +4,9 @@ import { github } from '../data/settings';
 
 export const NavList = () => (
   <>
-    <Link href={github} prefetch>
-      <a>GitHub</a>
-    </Link>
+    <a href={github} target="_blank" rel="noopener noreferrer">
+      GitHub
+    </a>
     <Link href="/docs/getting-started" prefetch>
       <a>Docs</a>
     </Link>

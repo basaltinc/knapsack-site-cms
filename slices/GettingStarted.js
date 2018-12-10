@@ -53,7 +53,7 @@ const GettingStarted = props => (
       <Button color="#1A1F4C" link="/docs/getting-started">
         Read the Docs
       </Button>
-      <Button color="#1A1F4C" isInverted link={github}>
+      <Button color="#1A1F4C" isTargetBlank isInverted link={github}>
         GitHub
       </Button>
     </ButtonsWrapper>

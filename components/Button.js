@@ -56,19 +56,30 @@ const ButtonWrapper = styled.button`
 `;
 /* eslint-enable no-nested-ternary */
 
-const Button = props => (
-  <Link href={props.link}>
-    <a>
-      <ButtonWrapper color={props.color} isInverted={props.isInverted}>
-        {props.children}
-      </ButtonWrapper>
-    </a>
-  </Link>
-);
+const Button = props => {
+  if (props.isTargetBlank)
+    return (
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <ButtonWrapper color={props.color} isInverted={props.isInverted}>
+          {props.children}
+        </ButtonWrapper>
+      </a>
+    );
+  return (
+    <Link href={props.link}>
+      <a>
+        <ButtonWrapper color={props.color} isInverted={props.isInverted}>
+          {props.children}
+        </ButtonWrapper>
+      </a>
+    </Link>
+  );
+};
 
 Button.defaultProps = {
   isInverted: false,
   color: '#1a1f4c',
+  isTargetBlank: false,
 };
 
 Button.propTypes = {
@@ -76,6 +87,7 @@ Button.propTypes = {
   children: PropTypes.string.isRequired,
   color: PropTypes.string,
   link: PropTypes.string.isRequired,
+  isTargetBlank: PropTypes.bool,
 };
 
 export default Button;
