@@ -52,7 +52,7 @@ const Hero = () => (
         <Button
           color="#343e98"
           isTargetBlank
-          link="https://demo.getbedrock.com"
+          link="https://design.basalt.io"
         >
           Demo
         </Button>
