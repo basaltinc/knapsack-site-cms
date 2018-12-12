@@ -23,13 +23,13 @@ export const NavStyles = styled.div`
       }
       // Open nav
       & ~ nav {
-        margin: -1rem 4rem 4rem -11rem;
+        margin: 0 4rem 4rem -11rem;
         padding-bottom: 1rem;
         @media (min-width: 700px) {
           margin-top: 1rem;
         }
         pointer-events: auto;
-        transform: translate(50px, 50px);
+        transform: translate(35px, 50px);
         // Restoring nav items from "lines" in the menu icon
         a {
           color: ${props => props.theme.light};
