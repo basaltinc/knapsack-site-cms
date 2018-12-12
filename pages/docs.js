@@ -65,6 +65,7 @@ export const Docs = styled.div`
   }
   pre {
     margin: 2rem 0;
+    white-space: initial;
   }
   @media (min-width: 800px) {
     flex-grow: 1;
