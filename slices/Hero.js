@@ -49,11 +49,7 @@ const Hero = () => (
         <Button color="#343e98" isInverted link="#getting-started">
           Install
         </Button>
-        <Button
-          color="#343e98"
-          isTargetBlank
-          link="https://design.basalt.io"
-        >
+        <Button color="#343e98" isTargetBlank link="https://design.basalt.io">
           Demo
         </Button>
       </ButtonsWrapper>
