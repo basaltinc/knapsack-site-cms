@@ -1,109 +1,108 @@
 # https://www.netlifycms.org/docs/intro
 backend:
   name: github
-  repo: basaltinc/bedrock-site
+  repo: basaltinc/knapsack
   branch: master
 
 publish_mode: editorial_workflow
 squash_merges: true
 
-media_folder: "static/uploads"
-public_folder: "/static/uploads"
+media_folder: "docs-site/static/img"
+public_folder: "/img"
 
 collections:
   - name: "docs" # Used in routes, e.g., /admin/collections/docs
     label: "Docs" # Used in the UI
     folder: "docs" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "docs"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "ID", name: "id", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Order", name: "order", widget: "number"}
 
-  - name: "site"
-    label: Site
-    files:
-      - label: Settings
-        name: settings
-        file: "data/settings.json"
-        fields:
-          - { label: Hero, name: hero, widget: string }
-          - { label: What Is Bedrock, name: whatIsBedrock, widget: string }
-          - label: Doc Categories
-            name: docCategories
-            widget: list
-            fields:
-             - label: Category
-               name: category
-               widget: string
-             - label: Docs
-               name: docs
-               widget: list
-               fields:
-                 - label: Doc
-                   name: doc
-                   widget: relation
-                   collection: docs
-                   valueField: title
-                   searchFields:
-                     - title
-                   displayFields:
-                     - title
-                     - body
+#   - name: "site"
+#     label: Site
+#     files:
+#       - label: Settings
+#         name: settings
+#         file: "data/settings.json"
+#         fields:
+#           - { label: Hero, name: hero, widget: string }
+#           - { label: What Is Bedrock, name: whatIsBedrock, widget: string }
+#           - label: Doc Categories
+#             name: docCategories
+#             widget: list
+#             fields:
+#              - label: Category
+#                name: category
+#                widget: string
+#              - label: Docs
+#                name: docs
+#                widget: list
+#                fields:
+#                  - label: Doc
+#                    name: doc
+#                    widget: relation
+#                    collection: docs
+#                    valueField: title
+#                    searchFields:
+#                      - title
+#                    displayFields:
+#                      - title
+#                      - body
 
-      - label: Testimonials
-        name: testimonials
-        file: "data/testimonials.json"
-        fields:
-          - label: Testimonials
-            name: testimonials
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Quote, name: quote, widget: string}
-              - {label: Image, name: img, widget: image}
-      - label: Features
-        name: features
-        file: "data/features.json"
-        fields:
-          - label: Features
-            name: features
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Copy, name: copy, widget: string}
-              - {label: Image, name: imgSrc, widget: image}
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "About"
-        name: "about"
-        file: "data/about.json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: string}
-          - {label: Body, name: body, widget: markdown}
-          - label: Features
-            name: features
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Items, name: items, widget: list }
-          - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
-      - label: "Features"
-        name: "features"
-        file: "data/features-page.json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
-          - label: Features
-            name: features
-            widget: list
-            fields:
-            - {label: Title, name: title, widget: string}
-            - {label: copy, name: copy, widget: string}
-            - {label: Image, name: imgSrc, widget: image}
-          - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
+#       - label: Testimonials
+#         name: testimonials
+#         file: "data/testimonials.json"
+#         fields:
+#           - label: Testimonials
+#             name: testimonials
+#             widget: list
+#             fields:
+#               - {label: Name, name: name, widget: string}
+#               - {label: Quote, name: quote, widget: string}
+#               - {label: Image, name: img, widget: image}
+#       - label: Features
+#         name: features
+#         file: "data/features.json"
+#         fields:
+#           - label: Features
+#             name: features
+#             widget: list
+#             fields:
+#               - {label: Title, name: title, widget: string}
+#               - {label: Copy, name: copy, widget: string}
+#               - {label: Image, name: imgSrc, widget: image}
+#   - label: "Pages"
+#     name: "pages"
+#     files:
+#       - label: "About"
+#         name: "about"
+#         file: "data/about.json"
+#         fields:
+#           - {label: Title, name: title, widget: string}
+#           - {label: Intro, name: intro, widget: string}
+#           - {label: Body, name: body, widget: markdown}
+#           - label: Features
+#             name: features
+#             widget: list
+#             fields:
+#               - {label: Title, name: title, widget: string}
+#               - {label: Items, name: items, widget: list }
+#           - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
+#       - label: "Features"
+#         name: "features"
+#         file: "data/features-page.json"
+#         fields:
+#           - {label: Title, name: title, widget: string}
+#           - {label: Intro, name: intro, widget: markdown}
+#           - {label: Body, name: body, widget: markdown}
+#           - label: Features
+#             name: features
+#             widget: list
+#             fields:
+#             - {label: Title, name: title, widget: string}
+#             - {label: copy, name: copy, widget: string}
+#             - {label: Image, name: imgSrc, widget: image}
+#           - {label: Post-Features Copy, name: postFeaturesCopy, widget: markdown}
