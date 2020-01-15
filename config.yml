@@ -7,8 +7,8 @@ backend:
 publish_mode: editorial_workflow
 squash_merges: true
 
-media_folder: "docs-site/static"
-public_folder: "/"
+media_folder: "docs-site/static/assets"
+public_folder: "/assets"
 
 collections:
   - name: "docs" # Used in routes, e.g., /admin/collections/docs
@@ -20,6 +20,28 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "ID", name: "id", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "navs"
+    label: "Navs"
+    files:
+      - label: "Sidebar"
+        name: sidebar
+        file: docs-site/sidebar.json
+        fields:
+          - label: Docs
+            name: docs
+            widget: object
+            fields:
+              - label: More Info
+                name: More Info
+                allow_add: true
+                field:
+                  widget: string
+                  name: id
+                  label: Doc ID
+                widget: list
+
+
 
 #   - name: "site"
 #     label: Site
