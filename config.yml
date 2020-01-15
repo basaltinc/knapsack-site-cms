@@ -2,7 +2,7 @@
 backend:
   name: github
   repo: basaltinc/knapsack
-  branch: develop
+  branch: next
   open_authoring: true
   commit_messages:
     create: 'docs: Create {{collection}} “{{slug}}”'
