@@ -10,7 +10,7 @@ backend:
     delete: 'docs: Delete {{collection}} “{{slug}}”'
     uploadMedia: 'docs: Upload “{{path}}”'
     deleteMedia: 'docs: Delete “{{path}}”'
-    openAuthoring: 'docs: '{{message}}''
+    openAuthoring: 'docs: "{{message}}"'
 
 site_url: https://www.knapsack.cloud
 logo_url: https://www.knapsack.cloud/assets/knapsack-icon.png
