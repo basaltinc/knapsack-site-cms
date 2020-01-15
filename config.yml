@@ -4,6 +4,9 @@ backend:
   repo: basaltinc/knapsack
   branch: develop
 
+site_url: https://www.knapsack.cloud
+logo_url: https://www.knapsack.cloud/assets/knapsack-icon.png
+
 publish_mode: editorial_workflow
 squash_merges: true
 
@@ -14,7 +17,7 @@ collections:
   - name: "docs" # Used in routes, e.g., /admin/collections/docs
     label: "Docs" # Used in the UI
     folder: "docs" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
