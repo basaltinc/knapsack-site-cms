@@ -3,6 +3,14 @@ backend:
   name: github
   repo: basaltinc/knapsack
   branch: develop
+  open_authoring: true
+  commit_messages:
+    create: 'docs: Create {{collection}} “{{slug}}”'
+    update: 'docs: Update {{collection}} “{{slug}}”'
+    delete: 'docs: Delete {{collection}} “{{slug}}”'
+    uploadMedia: 'docs: Upload “{{path}}”'
+    deleteMedia: 'docs: Delete “{{path}}”'
+    openAuthoring: 'docs: '{{message}}''
 
 site_url: https://www.knapsack.cloud
 logo_url: https://www.knapsack.cloud/assets/knapsack-icon.png
