@@ -72,7 +72,9 @@ export function setup(CMS, { init }) {
     ],
   };
 
-  init(config);
+  init({
+    config,
+  });
   CMS.registerPreviewStyle(
     'https://unpkg.com/@knapsack/design-system@next/dist/ks-design-system.css',
   );
