@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/basaltinc/knapsack-site-cms#readme",
   "devDependencies": {
+    "netlify-cms": "^2.10.8",
     "prettier": "^1.19.1",
     "serve": "^11.3.0"
   }
