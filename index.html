@@ -1,15 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-</head>
-<body>
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.10.7/dist/netlify-cms.js"></script>
-  <script>
-    CMS.registerPreviewStyle("https://unpkg.com/@knapsack/design-system@next/dist/ks-design-system.css");
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script>
+      // This global flag enables manual initialization.
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.10.7/dist/netlify-cms.js"></script>
+
+    <script type="module">
+      const { CMS, initCMS: init } = window;
+      import { setup } from './script.js';
+
+      setup(CMS, { init });
+    </script>
+  </body>
 </html>
