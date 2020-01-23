@@ -21,11 +21,6 @@ export async function setup(CMS, { init }) {
           widget: 'string',
         },
         {
-          label: 'ID',
-          name: 'id',
-          widget: 'string',
-        },
-        {
           label: 'Body',
           name: 'body',
           widget: 'markdown',
